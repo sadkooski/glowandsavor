@@ -1,31 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
-    return (
-        <header className="bg-white shadow-md w-full">
-            <div className="mx-auto flex justify-between items-center">
-                {/* Logo po lewej stronie */}
-                <Link to="/" className="text-2xl font-bold text-blue-600">
-                MojaStrona
-                </Link>
+    const location = useLocation();
+    const isHome = location.pathname === "/";
 
-                {/* Nawigacja po prawej stronie */}
+    return (
+        <header className={`w-full px-[10vw] ${isHome ? "bg-[url('/assets/header-bg.jpg')] bg-cover bg-center h-[100vh]" : "bg-white"}`}>
+            <div className="mx-auto flex justify-between items-center  py-4">
+                <Link to="/" className="text-2xl font-bold text-black">MojaStrona</Link>
+
                 <nav>
-                <ul className="flex space-x-6">
-                    <li>
-                    <Link to="/" className="text-gray-700 hover:text-blue-600">Home</Link>
-                    </li>
-                    <li>
-                    <Link to="/blog" className="text-gray-700 hover:text-blue-600">Blog</Link>
-                    </li>
-                    <li>
-                    <Link to="/about" className="text-gray-700 hover:text-blue-600">O Mnie</Link>
-                    </li>
-                    <li>
-                    <Link to="/contact" className="text-gray-700 hover:text-blue-600">Kontakt</Link>
-                    </li>
-                </ul>
+                    <ul className="flex gap-[8vw]">
+                        <li>
+                            <Link to="/" className="text-black hover:text-blue-400">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/blog" className="text-black hover:text-blue-400">Blog</Link>
+                        </li>
+                        <li>
+                            <Link to="/about" className="text-black hover:text-blue-400">O Mnie</Link>
+                        </li>
+                        <li>
+                            <Link to="/contact" className="text-black hover:text-blue-400">Kontakt</Link>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </header>
