@@ -6,12 +6,11 @@ const Header = () => {
     const isHome = location.pathname === "/";
 
     return (
-        <header className={`w-full px-[10vw] ${isHome ? "bg-[url('/assets/header-bg.jpg')] bg-cover bg-center h-[100vh]" : "bg-white"}`}>
-            <div className="mx-auto flex justify-between items-center  py-4">
-                <Link to="/" className="text-2xl font-bold text-black">MojaStrona</Link>
-
+        <header className={`w-full px-[8vw] flex flex-col ${isHome ? "bg-[url('/assets/header-bg.jpeg')] bg-cover bg-center h-[100vh]" : "bg-white"}`}>
+            <div className="mx-auto w-full flex justify-between items-center pt-[6vw] text-[1.5vw]">
+                <Link to="/" className=" font-bold text-black">MojaStrona</Link>
                 <nav>
-                    <ul className="flex gap-[8vw]">
+                    <ul className="flex gap-[6vw]">
                         <li>
                             <Link to="/" className="text-black hover:text-blue-400">Home</Link>
                         </li>
@@ -27,6 +26,15 @@ const Header = () => {
                     </ul>
                 </nav>
             </div>
+            
+            {/* Nowa sekcja pod nawigacją - tylko na stronie głównej */}
+            {isHome && (
+                <div className="w-full flex flex-col items-center justify-center mt-auto pb-[3vw] gap-[1vw]">
+                    <h2 className="text-[4vw] font-bold text-center">Lorem Ipsum</h2>
+                    <div className="w-full border-b border-black my-2"></div>
+                    <p className="text-[2vw] text-center">Lorem ipsum dolor sit amet.</p>
+                </div>
+            )}
         </header>
     );
 };
