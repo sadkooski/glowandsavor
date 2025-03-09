@@ -7,7 +7,7 @@ const Header = () => {
 
     return (
         <header className={`w-full px-[8vw] flex flex-col ${isHome ? "bg-[url('/assets/header-bg.jpeg')] bg-cover bg-center h-[100vh]" : "bg-white"}`}>
-            <div className="mx-auto w-full flex justify-between items-center pt-[6vw] text-[1.5vw]">
+            <div className="mx-auto w-full flex justify-between items-center py-[8vw] text-[1.5vw]">
                 <Link to="/" className=" font-bold text-black">MojaStrona</Link>
                 <nav>
                     <ul className="flex gap-[6vw]">

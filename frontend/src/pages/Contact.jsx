@@ -2,44 +2,42 @@ import React from "react";
 
 const Contact = () => {
     return (
-      <section className="w-full px-6 py-12 bg-gray-100">
-        {/* Górna sekcja: Dane kontaktowe + Zdjęcie */}
-        <div className="flex flex-col md:flex-row w-full items-stretch">
-          {/* Lewa kolumna: Dane kontaktowe */}
-          <div className="w-full md:w-1/2 bg-white p-8 flex flex-col justify-center">
-            <h3 className="text-xl font-semibold">Bądźmy w kontakcie</h3>
-            <p className="text-gray-600 mt-1">+48 123 456 789</p>
-  
-            <h3 className="text-xl font-semibold mt-6">Masz pytanie?</h3>
-            <p className="text-gray-600 mt-1">kontakt@mojastrona.pl</p>
-  
-            <h3 className="text-xl font-semibold mt-6">Godziny pracy</h3>
-            <p className="text-gray-600 mt-1">Pon - Pt: 8:00 - 16:00</p>
-  
-            <h3 className="text-xl font-semibold mt-6">Śledź nas:</h3>
+      <section className="w-full pb-[5vw] bg-white">
+        <div className="flex flex-row w-full">
+          <div className="w-full md:w-1/2 bg-white flex justify-center items-center">
+          <div className="w-fit flex flex-col text-left">
+            <h3 className="text-[2vw] font-semibold">Bądźmy w kontakcie</h3>
+            <p className="text-gray-600 mt-[0.5vw] text-[1.5vw]">+48 123 456 789</p>
+            <h3 className="text-[2vw] font-semibold mt-[5vw]">Masz pytanie?</h3>
+            <p className="text-gray-600 mt-[0.5vw] text-[1.5vw]">kontakt@mojastrona.pl</p>
+            <h3 className="text-[2vw] font-semibold mt-[5vw]">Godziny pracy</h3>
+            <p className="text-gray-600 mt-[0.5vw] text-[1.5vw]">Pon - Pt: 8:00 - 16:00</p>
+            <div className="flex flex-row justify-left items-center mt-[5vw]">
+              <h3 className="text-[2vw] font-semibold">Śledź nas:</h3>
             <a
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 text-blue-600 flex items-center"
             >
-              <img src="/images/instagram-icon.png" alt="Instagram" className="w-6 h-6 mr-2" />
-              Instagram
+              <img src="/assets/header-bg.jpeg" alt="Instagram" className="w-6 h-6 mr-2" />
             </a>
+            </div>
+            </div>
           </div>
   
           {/* Prawa kolumna: Zdjęcie */}
           <div className="w-full md:w-1/2">
             <img
-              src="/images/contact-image.jpg"
+              src="/assets/img-1.jpg"
               alt="Kontakt"
-              className="w-full h-full object-cover"
+              className="w-full object-cover"
             />
           </div>
         </div>
   
         {/* Dolna sekcja: Formularz kontaktowy */}
-        <div className="mt-12 bg-white p-8 shadow-md">
+        <div className="mt-[5vw] bg-white px-[10vw] ">
           <form className="flex flex-col">
             {/* Imię i Email */}
             <div className="flex flex-col md:flex-row gap-4">
