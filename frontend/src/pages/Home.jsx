@@ -2,9 +2,9 @@ import React from "react";
 
 const Home = () => {
 return (
-    <div >
+    <div className="">
       {/* Sekcja 1 */}
-      <div className="py-[2vw] px-[8vw] ">
+      <div className="py-[2vw] px-[8vw] my-[3vw]">
       <section className="flex flex-row  gap-[1vw] px-[2vw] py-[3vw] bg-gray-100">
       <p className="w-[33%] pt-[7vw] text-[1.5vw] text-right">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, eveniet fugiat unde molestiae, ab dolore aliquid sint enim ipsum, facere voluptates omnis. Enim corporis non, error ad nemo unde adipisci?e
@@ -16,9 +16,9 @@ return (
       </p>
       </section>
       </div>
-
+      <div className= "border-b border-black mx-[8vw]"></div>
       {/* Sekcja 2 */}
-      <div className="my-[6vw] py-[2vw] px-[8vw] ">
+      <div className="my-[3vw] py-[2vw] px-[8vw] ">
       <section className="flex flex-row px-[2vw] bg-white relative">
       <p className="w-[25%] pt-[5vw] text-[1.5vw] font-normal absolute left-[8vw] z-1">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, eveniet fugiat unde molestiae, abs non, error ad nemo unde adipisc i?edasdas afdf sfgegwe rewrgwerg ewrgewrgerwg
@@ -62,5 +62,7 @@ return (
 </div>
   );
 };
+
+<div className="w-full border-b border-black my-2"></div>
 
 export default Home;
