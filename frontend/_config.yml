@@ -1,0 +1,5 @@
+title: GLOW&SAVOR
+description: Strona stworzona w Jekyll
+baseurl: ""  # Jeśli strona jest główną stroną repozytorium
+url: "https://sadkooski.github.io"  # Twój GitHub Pages URL
+theme: jekyll-theme-slate  # Przykładowy motyw Jekyll
