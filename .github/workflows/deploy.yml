@@ -1,36 +1,34 @@
-name: Deploy Jekyll site to GitHub Pages
+name: Deploy Frontend to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Upewnij się, że to jest gałąź, na którą robisz push
+      - main  # lub 'master', jeśli to główna gałąź repozytorium
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          ruby-version: 2.7  # Użyj wersji Ruby, która jest kompatybilna z Twoim projektem
+          node-version: 18  # Możesz zmienić na wersję, której używasz
 
       - name: Install dependencies
-        run: |
-          cd frontend
-          gem install bundler
-          bundle install
+        working-directory: frontend
+        run: npm install
 
-      - name: Build the Jekyll site
-        run: |
-          cd frontend
-          bundle exec jekyll build
+      - name: Build project
+        working-directory: frontend
+        run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./frontend/_site
+          branch: gh-pages
+          folder: frontend/dist  # Folder, który ma zostać opublikowany
+          clean: true
