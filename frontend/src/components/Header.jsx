@@ -31,7 +31,7 @@ const Header = () => {
             {isHome && (
                 <div className="w-full flex flex-col items-center justify-center mt-auto pb-[3vw] gap-[1vw]">
                     <h2 className="text-[4vw] font-bold text-center">Lorem Ipsum</h2>
-                    <div className="w-full border-b border-black my-2"></div>
+                    <div className="w-full border-b-[0.1vw] border-black my-[1vw]"></div>
                     <p className="text-[2vw] text-center">Lorem ipsum dolor sit amet.</p>
                 </div>
             )}

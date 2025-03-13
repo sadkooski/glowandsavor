@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="bg-white text-black pb-[5vw] pt-[5vw] mt-auto w-full">
             <div className="mx-[8vw]">
                 {/* Główna sekcja footer */}
-                <div className="flex items-center justify-between border-b border-gray-400 pb-[3vw]">
+                <div className="flex items-center justify-between border-b-[0.1vw] border-black pb-[3vw]">
                     {/* Tekst po lewej */}
                     <p className="text-[0.8vw]">&copy; 2025 GLOW&SAVOR CREATIONS</p>
 
@@ -20,7 +20,7 @@ const Footer = () => {
                 </div>
 
                 {/* Dolna sekcja z nawigacją */}
-                <div className="flex justify-center gap-[15vw] text-[1.5vw]  border-gray-200 pt-[1.5vw]">
+                <div className="flex justify-center gap-[15vw] text-[1.5vw] border-gray-200 pt-[1.5vw]">
                     <Link to="/" className="hover:text-blue-400">Home</Link>
                     <Link to="/blog" className="hover:text-blue-400">Blog</Link>
                     <Link to="/about" className="hover:text-blue-400">O Mnie</Link>

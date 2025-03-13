@@ -37,6 +37,24 @@ const About = () => {
             <img className="h-[24vw]" src="/assets/img-9.jpg" alt="" />
         </div>
     </div>
+
+    <div className="flex flex-col w-full bg-gray-100 px-[13vw] pb-[1.5vw] mt-[3.5vw] relative">
+        <div className="flex flex-col px-[10vw]">
+            <h3 className="text-[6vw] font-medium leading-tight">Quote</h3>
+            <p className="text-[1vw]">"Lorem ipsum dolor sit amet consectetur adipisicing elit. tur harum! Dolores voluptates minus quisquam quasi, odit sunt incidunt quos hic officiis velit laboriosam, provident explicabo vero."</p>
+            <span className="text-[2.5vw] leading-none mt-[0.5vw]">Kasia Drobix</span>
+            <p className="text-[0.8vw] uppercase pt-[1.5vw]">Lorem ipsum dolor sit, amet consectetuharum iste rchitecto error praesentium in!</p>
+        </div>
+
+        <div className="flex flex-row gap-[0.6vw] bg-gray-200 mt-[5vw] mr-[4vw] h-[35vw]">
+            <img className="h-full w-[37%] object-cover" src="/assets/img-1.jpg" alt="" />
+            <img className="h-full w-[30%] object-cover" src="/assets/img-2.jpg" alt="" />
+            <div className="w-[25vw] absolute top-[28vw] left-[65vw]">
+                <span className="text-[0.8vw] uppercase">Lorem ipsum</span>
+                <p className="text-[1.8vw]">Lorem ipsum dolor sit ametuisquam quo consectetur laborum. Aliquam voluptas trtyruytutyarum.</p>
+            </div>
+        </div>
+    </div>
 </section>
     )
 }

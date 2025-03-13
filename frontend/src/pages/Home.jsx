@@ -3,21 +3,24 @@ import React from "react";
 const Home = () => {
 return (
     <div className="">
-      {/* Sekcja 1 */}
+
       <div className="py-[2vw] px-[8vw] my-[3vw]">
-      <section className="flex flex-row  gap-[1vw] px-[2vw] py-[3vw] bg-gray-100">
+      <section className="flex flex-row  gap-[1vw] px-[2vw] bg-gray-100">
       <p className="w-[33%] pt-[7vw] text-[1.5vw] text-right">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, eveniet fugiat unde molestiae, ab dolore aliquid sint enim ipsum, facere voluptates omnis. Enim corporis non, error ad nemo unde adipisci?e
       </p>
-      <img src="/assets/hero-img.jpeg" alt="" className="w-[34%] flex-shrink-0" />
+      <div className="w-[34%] py-[3vw] bg-gray-600">
+        <img src="/assets/hero-img.jpeg" alt="" className="w-full" />
+      </div>
       <p className="w-[33%] pt-[7vw] text-[1.3vw] text-left">
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nemo earum at delectus, quod aliquam eveniet voluptas saepe ratione? Doloremque impedit necessitatibus tenetur vero. Ab sed nostrum saepe error quibusdam.
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit excepturi quae non asperiores, aperiam eos vitae placeat nulla minima? Voluptatum deleniti distinctio recusandae sunt veritatis quibusdam obcaecati in doloremque aut.
       </p>
       </section>
       </div>
-      <div className= "border-b border-black mx-[8vw]"></div>
-      {/* Sekcja 2 */}
+      <div className= "border-b-[0.1vw] border-black mx-[8vw]"></div>
+
+
       <div className="my-[3vw] py-[2vw] px-[8vw] ">
       <section className="flex flex-row px-[2vw] bg-white relative">
       <p className="w-[25%] pt-[5vw] text-[1.5vw] font-normal absolute left-[8vw] z-1">
@@ -36,7 +39,7 @@ return (
         </section>
       </div>
 
-      {/* sEkcja 3 */}
+
       <div className="px-[8vw] pt-[2vw] pb-[5vw] text-center bg-gray-100 text-black">
       <h3 className="text-[4vw] ">Follow our feed</h3>
       <a
@@ -58,7 +61,8 @@ return (
       <li className="w-full"><img src="/assets/img-8.jpg" alt="Image 2" className="w-full aspect-square object-cover" /></li>
       <li className="w-full"><img src="/assets/img-12.jpg" alt="Image 3" className="w-full aspect-square object-cover" /></li>
       </ul>
-</div>
+      </div>
+
 </div>
   );
 };
