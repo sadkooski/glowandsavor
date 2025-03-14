@@ -4,7 +4,7 @@ const About = () => {
     return (
 <section className="w-full bg-white">
     <div className="flex flex-col w-full h-[55vw] px-[7vw] mb-[5vw] relative">
-            <img src="/assets/img-4.jpg"
+            <img src="glow-savor/assets/img-4.jpg"
                 alt="Kontakt"
                 className="w-[38vw] h-full object-cover object-right-top z-1"/>
             <div className="bg-gray-100 text-left flex flex-col gap-[2vw] pt-[10vw] pl-[12vw] pr-[8vw] pb-[10vw] w-[54vw] h-[53vw] absolute top-[7vw] left-[38vw] z-0">
@@ -21,18 +21,18 @@ const About = () => {
             <p className="">Lorem ipsum,  provident, , enda oquam praesentium dolores, quis sapien sit amet consectetur adipisicing elit. Mollitia quam dolorem doloribus voluptas, tenetur illo quia sequi magnam suscipit vitae accusantium eveniet similique quibusdam eius amet delectus tempora repudiandae consectetur!Lorem</p>
             <p className="">Lorem ipsum, dolor sit amet ctionem libero neque dignipis nobis suscipit perspiaudantium et in ipsa eos!Lorem ipsum dolor sit, amet consectecing elit. Qus s itaque molestiae consequatur, esse ut. Odio eligendi ea numquam praesentium dolores, quis sapiente voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quam dolorem doloribus voluptas, tenetur illo quia sequi magnam suscipit vitae accusantium eveniet similique quibusdam eius amet delectus tempora repudiandae consectetur!Lorem</p>
         </div>
-        <img src="/assets/img-8.jpg"
+        <img src="glow-savor/assets/img-8.jpg"
                 alt="Kontakt"
                 className="w-[58vw] object-cover" />
     </div>
 
     <div className="flex flex-row w-full mt-[5vw] pl-[2vw] gap-[1.5vw]">
         <div className="flex flex-col w-[65vw] gap-[2vw]">
-            <img className="" src="/assets/img-7.jpg" alt="" />
+            <img className="" src="glow-savor/assets/img-7.jpg" alt="" />
             <p className="text-[1.4vw] px-[1vw] text-left">Lorem ipsum, dolor sit amet consectetur adipisicin ipt vitae tenetur. Et, molestiae minus quasi delectus quae vitae?</p>
         </div>
         <div className="flex flex-col w-[35vw] gap-[2vw]">
-            <img className="h-[24vw]" src="/assets/img-5.jpg" alt="" />
+            <img className="h-[24vw]" src="glow-savor/assets/img-5.jpg" alt="" />
             <p className="text-[1.4vw] px-[2vw]"> Lorem ipsum dolor sit amet consectetur adipisicings quas doloremque fuga.</p>
             <img className="h-[24vw]" src="/assets/img-9.jpg" alt="" />
         </div>
@@ -47,8 +47,8 @@ const About = () => {
         </div>
 
         <div className="flex flex-row gap-[0.6vw] bg-gray-200 mt-[5vw] mr-[4vw] h-[35vw]">
-            <img className="h-full w-[37%] object-cover" src="/assets/img-1.jpg" alt="" />
-            <img className="h-full w-[30%] object-cover" src="/assets/img-2.jpg" alt="" />
+            <img className="h-full w-[37%] object-cover" src="glow-savor/assets/img-1.jpg" alt="" />
+            <img className="h-full w-[30%] object-cover" src="glow-savor/assets/img-2.jpg" alt="" />
             <div className="w-[25vw] absolute top-[28vw] left-[65vw]">
                 <span className="text-[0.8vw] uppercase">Lorem ipsum</span>
                 <p className="text-[1.8vw]">Lorem ipsum dolor sit ametuisquam quo consectetur laborum. Aliquam voluptas trtyruytutyarum.</p>
