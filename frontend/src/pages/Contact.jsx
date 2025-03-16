@@ -29,7 +29,7 @@ const Contact = () => {
           {/* Prawa kolumna: Zdjęcie */}
           <div className="w-full md:w-1/2">
             <img
-              src="/assets/img-1.jpg"
+              src="glow-savor/assets/img-1.jpg"
               alt="Kontakt"
               className="w-full object-cover"
             />
