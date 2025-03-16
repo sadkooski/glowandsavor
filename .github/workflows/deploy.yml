@@ -29,7 +29,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          token: ${{ secrets.GH_PAT }}
+          token: ${{ secrets.GH_PAGES }}
           branch: gh-pages
           folder: frontend/dist  # Folder, który ma zostać opublikowany
           clean: true
