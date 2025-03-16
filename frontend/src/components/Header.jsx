@@ -7,21 +7,21 @@ const Header = () => {
 
     return (
         <header className={`w-full px-[8vw] flex flex-col ${isHome ? "bg-[url('/assets/header-bg.jpeg')] bg-cover bg-center h-[100vh]" : "bg-white"}`}>
-            <div className="mx-auto w-full flex justify-between items-center py-[8vw] text-[1.5vw]">
-                <Link to="/" className=" font-bold text-black">MojaStrona</Link>
+            <div className="mx-auto w-full flex justify-between items-center py-[8vw] text-[1.2vw]">
+                <Link to="/" className=" font-bold">MojaStrona</Link>
                 <nav>
                     <ul className="flex gap-[6vw]">
                         <li>
-                            <Link to="/" className="text-black hover:text-blue-400">Home</Link>
+                            <Link to="/" className=" hover:text-blue-400">HOME</Link>
                         </li>
                         <li>
-                            <Link to="/blog" className="text-black hover:text-blue-400">Blog</Link>
+                            <Link to="/blog" className=" hover:text-blue-400">BLOG</Link>
                         </li>
                         <li>
-                            <Link to="/about" className="text-black hover:text-blue-400">O Mnie</Link>
+                            <Link to="/about" className=" hover:text-blue-400">ABOUT ME</Link>
                         </li>
                         <li>
-                            <Link to="/contact" className="text-black hover:text-blue-400">Kontakt</Link>
+                            <Link to="/contact" className=" hover:text-blue-400">CONTACT</Link>
                         </li>
                     </ul>
                 </nav>

@@ -20,7 +20,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               className="mt-2 text-blue-600 flex items-center"
             >
-              <img src="glow-savor/assets/header-bg.jpeg" alt="Instagram" className="w-6 h-6 mr-2" />
+              <img src="/assets/header-bg.jpeg" alt="Instagram" className="w-6 h-6 mr-2" />
             </a>
             </div>
             </div>
@@ -29,7 +29,7 @@ const Contact = () => {
           {/* Prawa kolumna: Zdjęcie */}
           <div className="w-full md:w-1/2">
             <img
-              src="glow-savor/assets/img-1.jpg"
+              src="/assets/img-1.jpg"
               alt="Kontakt"
               className="w-full object-cover"
             />
@@ -79,7 +79,7 @@ const Contact = () => {
               </div>
               <button
               type="submit"
-              className="flex font-medium text-[1.5vw] px-[4vw] py-[1vw] w-fit bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+              className="flex font-medium text-[1.5vw] px-[4vw] py-[0.5vw] w-fit bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
               >
               Wyślij
               </button>
