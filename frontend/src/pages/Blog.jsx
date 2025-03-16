@@ -19,7 +19,7 @@ const Blog = () => {
                 <p className="text-[1.2vw] leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat harum mollitia maiores ullam commodi. Quia ipsa nam possimus dolores doloremque porro consequatur alias, non aliquam vel at expedita quaerat explicabo.</p>
                 <p className="text-[1.2vw] leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat harum mollitia maiores ullam commodi. Quia ipsa nam possimus dolores doloremque porro consequatur alias, non aliquam vel at expedita quaerat explicabo.</p>
                 <div className="flex justify-center">
-                <img src="glow-savor/assets/img-13.jpg" alt="" className="w-[40vw] py-[1vw]"/>
+                <img src="/assets/img-13.jpg" alt="" className="w-[40vw] py-[1vw]"/>
                 </div>
                 <h3 className="text-[2.5vw] leading-tight py-[0.5vw]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat harum mollitia maiores ullam commodi. Quia ipsa nam possimus dolores doloremque porro consequatur alias, non aliquam vel at expedita quaerat explicabo.</h3>
                 <p className="text-[1.2vw] leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat harum mollitia maiores ullam commodi. Quia ipsa nam possimus dolores doloremque porro consequatur alias, non aliquam vel at expedita quaerat explicabo.</p>
@@ -32,7 +32,7 @@ const Blog = () => {
                 <p className="text-[1.2vw] leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat harum mollitia maiores ullam commodi. Quia ipsa nam possimus dolores doloremque porro consequatur alias, non aliquam vel at expedita quaerat explicabo.</p>
                 <p className="text-[1.2vw] leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat harum mollitia maiores ullam commodi. Quia ipsa nam possimus dolores doloremque porro consequatur alias, non aliquam vel at expedita quaerat explicabo.</p>
                 <div className="flex justify-center">
-                <img src="glow-savor/assets/img-5.jpg" alt="" className="w-[50vw]"/>
+                <img src="/assets/img-5.jpg" alt="" className="w-[50vw]"/>
                 </div>
                 <h3 className="text-[2.5vw] leading-tight py-[0.5vw]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat harum mollitia maiores ullam commodi. Quia ipsa nam possimus dolores doloremque porro consequatur alias, non aliquam vel at expedita quaerat explicabo.</h3>
                 <p className="text-[1.2vw] leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat harum mollitia maiores ullam commodi. Quia ipsa nam possimus dolores doloremque porro consequatur alias, non aliquam vel at expedita quaerat explicabo.</p>
