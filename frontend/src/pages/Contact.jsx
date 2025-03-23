@@ -5,15 +5,21 @@ const Contact = () => {
       <section className="w-full bg-white">
         <div className="flex flex-row w-full">
           <div className="w-full md:w-1/2 flex">
-          <div className="w-fit h-fit flex flex-col bg-gray-100 text-left pl-[24.7vw] pb-max px-[4vw] py-[2vw] mt-[5vw] mr-[2vw]">
-            <h3 className="text-[2vw] font-semibold">Bądźmy w kontakcie</h3>
-            <p className="text-gray-600 mt-[0.5vw] text-[1.5vw]">+48 123 456 789</p>
-            <h3 className="text-[2vw] font-semibold mt-[5vw]">Masz pytanie?</h3>
-            <p className="text-gray-600 mt-[0.5vw] text-[1.5vw]">kontakt@mojastrona.pl</p>
-            <h3 className="text-[2vw] font-semibold mt-[5vw]">Godziny pracy</h3>
-            <p className="text-gray-600 mt-[0.5vw] text-[1.5vw]">Pon - Pt: 8:00 - 16:00</p>
-            <div className="flex flex-row justify-left items-center mt-[5vw]">
-              <h3 className="text-[2vw] font-semibold">Śledź nas:</h3>
+          <div className="w-full h-fit flex flex-col bg-gray-100 text-left px-[5vw] py-[8vw] px-[2vw] py-[2vw] mt-[5vw] mr-[2vw]">
+            <div className="flex flex-row justify-between">
+              <h3 className="text-[1.8vw] font-semibold">Bądźmy w kontakcie</h3>
+              <p className=" text-gray-600 mt-[0.5vw] text-[1.5vw]">+48 123 456 789</p>
+            </div>
+            <div className="flex flex-row justify-between">
+              <h3 className="text-[1.8vw] font-semibold mt-[5vw]">Masz pytanie?</h3>
+              <p className=" text-gray-600 mt-[5vw] text-[1.5vw]">kontakt@mojastrona.pl</p>
+            </div>
+            <div className="flex flex-row justify-between">
+              <h3 className="text-[1.8vw] font-semibold mt-[5vw]">Godziny pracy</h3>
+            <p className="text-gray-600 mt-[5vw] text-[1.5vw]">Pon - Pt: 8:00 - 16:00</p>
+            </div>
+            <div className="flex flex-row justify-between items-center mt-[5vw]">
+              <h3 className="text-[1.8vw] font-semibold">Śledź nas:</h3>
             <a
               href="https://instagram.com"
               target="_blank"

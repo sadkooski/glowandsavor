@@ -7,8 +7,29 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'HankenGrotesk';
+  src: url('/assets/fonts/HankenGrotesk.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HankenGrotesk-Italic';
+  src: url('/assets/fonts/HankenGrotesk-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HighSummit';
+  src: url('/assets/fonts/High Summit.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "HankenGrotesk", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
