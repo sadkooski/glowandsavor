@@ -39,7 +39,7 @@ return (
       <div className="md:my-[3vw] md:py-[2vw] md:px-[8vw] ">
       <section className="flex flex-col md:flex-row md:px-[2vw] bg-white relative">
 
-      <p className="md:w-[25%] md:pt-[5vw] px-[8vw] md:px-0 md:text-[1.4vw] text-xl leading-8 md:leading-[2.5vw] font-normal absolute top-[80vw] md:top-0 md:left-[8vw] z-1 font-[Didonesque]">
+      <p className="md:w-[25%] md:pt-[5vw] px-[8vw] md:px-0 md:text-[1.4vw] text-lg leading-8 md:leading-[2.5vw] font-normal absolute top-[80vw] md:top-0 md:left-[8vw] z-1 font-[Didonesque]">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis,dasdasd asdasdas  asdasdasds dsds dasddsdsdsdsd s abs non, error ad nemo undec i?edasdas afdf sfgegwe rewrgwerg ewrgewrgerwg
       </p>
 

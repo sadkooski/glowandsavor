@@ -7,7 +7,7 @@ const Header = () => {
 
     return (
         <header className={`w-full px-[8vw] flex flex-col ${isHome ? "bg-[url('/assets/img-18.jpg')] bg-cover bg-center h-[100vh]" : "bg-white"}`}>
-            <div className="mx-auto w-full flex border-b-1 border-black justify-center md:justify-between items-center md:py-[8vw] text-[1vw]">
+            <div className={`mx-auto w-full flex justify-center md:justify-between items-center md:py-[8vw] text-[1vw] ${isHome ? "border-b-1 border-black" : "border-b-0 border-transparent"}`}>
                 <Link to="/" className=" font-bold">
                 <img className="w-50 md:w-[12vw] md:absolute md:top-[3vw]" src="/assets/icons/5.png" alt="" />
                 </Link>
@@ -31,11 +31,11 @@ const Header = () => {
             
             {/* Nowa sekcja pod nawigacją - tylko na stronie głównej */}
             {isHome && (
-                <div className="w-full flex flex-col text-left md:text-center gap-1 md:gap-0 justify-center md:mt-auto pb-[2vw]">
-                    <h2 className="text-3xl leading-[7vw] pt-15 md:text-[2.5vw] font-bold">Lorem Ipsum asdasd dasd asdasd asdasdasdsdsdasdas</h2>
+                <div className="w-full flex flex-col text-left md:text-center gap-1 md:gap-0 justify-center md:mt-auto">
+                    <h2 className="text-3xl leading-snug md:leading-none pt-15 md:text-[2.5vw] font-bold md:mb-[3vw]">Lorem Ipsum asdasd dasd asdasd asdasdasdsdsdasdas</h2>
                     <p className="md:hidden text-base pb-30">Lorem ipsum dolor sit amet dsd sd asd asd sdsd sdasd as.</p>
-                    <div className="w-full border-b-1 border-black md:my-[2vw]"></div>
-                    <p className="hidden md:flex text-[1vw] text-center my-[1vw] justify-center">Lorem ipsum dolor sit amet.</p>
+                    <div className="w-full border-b-1 border-black"></div>
+                    <p className="hidden md:flex text-[1vw] text-center my-[1vw] justify-center my-[3vw]">Lorem ipsum dolor sit amet.</p>
                 </div>
             )}
         </header>
