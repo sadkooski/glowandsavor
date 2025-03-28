@@ -9,10 +9,10 @@ const About = () => {
                 className="md:w-[38vw] md:h-full object-cover md:object-right-top md:z-1"/>
                 <p className="flex justify-center md:hidden font-[HighSummit] text-4xl my-10">Zakochana w Positano</p>
 
-            <div className="bg-gray-100 text-left flex flex-col md:gap-[2vw] gap md:pt-[14vw] py-25 md:py-0 px-10 md:px-0 mx-[3vw] mb-5 md:mb-0 md:mx-0 md:mt-0 md:pl-[12vw] md:pr-[8vw] md:pb-[10vw] md:w-[54vw] md:h-[53vw] md:absolute md:top-[7vw] md:left-[38vw] md:z-0">
+            <div className="bg-gray-100 text-left flex flex-col md:gap-[2vw] gap md:pt-[14vw] py-20 md:py-0 px-10 md:px-0 mx-[3vw] mb-5 md:mb-0 md:mx-0 md:mt-0 md:pl-[12vw] md:pr-[8vw] md:pb-[10vw] md:w-[54vw] md:h-[53vw] md:absolute md:top-[7vw] md:left-[38vw] md:z-0">
                 <p className="hidden md:flex absolute top-[7vw] left-[8vw] font-[HighSummit] text-[2.5vw]">Zakochana w Positano</p>
-                <h3 className="flex md:text-[1.6vw] text-5xl pb-15 md:pb-0 justify-center md:justify-normal">Cześć tu Kasia</h3>
-                <p className="md:text-[1.2vw] text-2xl md:leading-[2.3vw] leading-loose">Lorem ipsum dolor sit ia,dfgdfg dfdf gdf gdfgdfgdgdf dgfdfgdfdfgdfgdf dolodfgsdfgs dgd gdf dgdfgdfgdfg dgrgergdfgdsfg fgsdfggreger gdfgdfg ergedfgdfribus eviumremque tempore quae dolores? Unde soluta dolorum accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta dolorum temporibus quos omnis nobis repudiandae cumque vel non, corporis, veniam ratione. Nam autem voluptatem nihil accusantium illum amet commodi.</p>
+                <h3 className="flex md:text-[1.6vw] text-4xl pb-12 md:pb-0 justify-center md:justify-normal">Cześć tu Kasia</h3>
+                <p className="md:text-[1.2vw] text-xl md:leading-[2.3vw] leading-loose">Lorem ipsum dolor sit ia,dfgdfg dfdf gdf gdfgdfgdgdf dgfdfgdfdfgdfgdf dolodfgsdfgs dgd gdf dgdfgdfgdfg dgrgergdfgdsfg fgsdfggreger gdfgdfg ergedfgdfribus eviumremque tempore quae dolores? Unde soluta dolorum accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta dolorum temporibus quos omnis nobis repudiandae cumque vel non, corporis, veniam ratione. Nam autem voluptatem nihil accusantium illum amet commodi.</p>
             </div>
     </div>
 
