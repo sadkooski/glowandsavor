@@ -9,13 +9,13 @@ return (
 
       <div className="flex flex-col px-[4vw] md:px-0 md:w-[33%] pb-15 md:pb-0 pt-15 md:pt-[7vw] md:pl-[7vw] leading-10 md:leading-[2vw] text-3xl md:text-[1.5vw] md:text-left font-[Didonesque] gap-[2vw]">
         <p>
-        Lorem ipsum, dolor sit amet consectetur Blanditiis, ad nemo unde adipisci?e
+        Chcesz zadbać o swoje zdrowie, promienną młodą skórę i lepsze samopoczucie?
         </p>
         <p>
-        Lorem ipsum, dolor sitr Blanditiis, ad nemo dipisci?e
+        Interesujesz się zdrową suplementacją oraz naturalnymi metodami na poprawę wyglądu?
         </p>
         <p>
-        Lorem ipsum, dolor sit amet consectetur  ad nemo unde adipisci?e
+        Kochasz to, co piękne, smaczne oraz to, co daje nam natura?
         </p>
       </div>
     
@@ -25,10 +25,9 @@ return (
 
       <div className="flex flex-col py-10 px-[6vw] md:px-0 md:w-[33%] md:pt-[7vw] md:text-[1.1vw] md:pb-[2vw] text-left gap-[2vw] leading-7 md:leading-[2.2vw] font-[HankenGrotesk]">
         <p>
-          Poznaj Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nemo earum at delectus, quod aliquam eveniet voluptas saepe ratione? Doloremque impedit necessitatibus tenetur vero. Ab sed nostrum saepe error quibusdam.
-        </p>
+        Odkryj sekrety pysznych, zdrowych i prostych w przygotowaniu przepisów, które łączą przyjemność smaku z troską o Twoje ciało. Ten e-book to nie tylko zbiór wyjątkowych receptur – to sposób na to, by w natłoku codziennych obowiązków znaleźć chwilę dla siebie i świadomie zadbać o swoje zdrowie oraz piękno od wewnątrz. Z każdym łykiem poczujesz, jak Twoje ciało nabiera blasku – smakuj, celebruj i promieniej każdego dnia.</p>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nemo earum at delectus, quod aliquam eveniet voluptas saepe ratione? Doloremque impedit necessitatibus tenetur vero. Ab sed nostrum saepe error quibusdam.
+        Dbaj o siebie świadomie i pozwól sobie lśnić - bo Glow&Savor to nie tylko jedzenie, to styl życia!
         </p>
       </div>
 
@@ -40,24 +39,20 @@ return (
       <section className="flex flex-col md:flex-row md:px-[2vw] bg-white relative">
 
       <p className="md:w-[25%] md:pt-[5vw] px-[8vw] md:px-0 md:text-[1.4vw] text-lg leading-8 md:leading-[2.5vw] font-normal absolute top-[80vw] md:top-0 md:left-[8vw] z-1 font-[Didonesque]">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis,dasdasd asdasdas  asdasdasds dsds dasddsdsdsdsd s abs non, error ad nemo undec i?edasdas afdf sfgegwe rewrgwerg ewrgewrgerwg
+      Twórczyni marki Glow&Savor. Pasjonatka celebrowania. Miłośniczka piękna i natury, zakochana w tańcu oraz sztuce.
       </p>
 
       <img src="/assets/my-name-img.jpeg" alt="" className="md:w-[45%] z-0 ml-auto"/>
 
       <div className="md:w-[30%] flex flex-col py-10 md:py-0 px-[6vw] md:px-0 md:pt-[5vw] md:pl-[3vw] md:text-[1vw] text-left">
-      <h3 className="md:pb-[1vw] pb-4 md:text-[1.4vw] text-2xl ">Cześć jestem Kasia</h3>
       <div className="flex flex-col gap-[2vw] leading-7 md:leading-[1.7vw] font-[HankenGrotesk]">
       <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nemo earum at delectus, quod aliquam eveniet voluptas saepe ratione? Doloremque impedit necessitatibus tenetur vero. Ab sed nostrum saepe error quibusdam.
-      Lorem ipsum dolor sit amet, consepturi quae non nulla minimabusdam obcaecati in doloremque aut.
+      Glow&Savor to nie tylko strona, to filozofia, sposób patrzenia na życie, zaproszenie do celebracji chwili. To szepcząca mi do ucha intuicja, która mówi: zwolnij, poczuj smak, zatroszcz się o siebie tak, jak na to zasługujesz.
       </p>
       <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nemo earum at delectus, quod aliquam eveniet voluptas saepe ratione? Doloremque impedit necessitatibus tenetur vero. Ab sed nostrum saepe error quibusdam.
-      </p>
+      To połączenie tego, co w życiu najpiękniejsze – świadomego odżywiania, miłości do prostych rytuałów i troski o własne ciało, które odwdzięcza się blaskiem. W każdej kropli koktajlu jest coś więcej niż tylko składniki – jest intencja, jest chęć, by czuć się dobrze w swojej skórze, by pielęgnować zdrowie od wewnątrz. By odżywić swoje ciało oraz serce.      </p>
       <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit excepturi quae non asperiores, aperiam eos vitae placeat nulla minima? Voluptatum deleniti
-      </p>
+      Glow&Savor to moje miejsce na ziemi, moje światło w codzienności, sposób, w jaki odnajduję równowagę między tym, co dobre dla ciała, a tym, co karmi duszę. To chwila spokoju o poranku, pierwszy łyk, smak, który otula, energia, która budzi się we mnie.      </p>
       </div>
       </div>
 

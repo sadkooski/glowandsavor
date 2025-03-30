@@ -3,16 +3,17 @@ import React from "react";
 const About = () => {
     return (
 <section className="w-full bg-white">
-    <div className="flex flex-col w-full md:h-[55vw] md:px-[7vw] md:mb-[5vw] md:relative">
+    <div className="flex flex-col w-full md:h-[55vw] md:px-[7vw] md:mb-[12vw] md:relative">
             <img src="/assets/img-4.jpg"
                 alt="Kontakt"
                 className="md:w-[38vw] md:h-full object-cover md:object-right-top md:z-1"/>
-                <p className="flex justify-center md:hidden font-[HighSummit] text-4xl my-10">Zakochana w Positano</p>
 
-            <div className="bg-gray-100 text-left flex flex-col md:gap-[2vw] gap md:pt-[14vw] py-20 md:py-0 px-10 md:px-0 mx-[3vw] mb-5 md:mb-0 md:mx-0 md:mt-0 md:pl-[12vw] md:pr-[8vw] md:pb-[10vw] md:w-[54vw] md:h-[53vw] md:absolute md:top-[7vw] md:left-[38vw] md:z-0">
-                <p className="hidden md:flex absolute top-[7vw] left-[8vw] font-[HighSummit] text-[2.5vw]">Zakochana w Positano</p>
-                <h3 className="flex md:text-[1.6vw] text-4xl pb-12 md:pb-0 justify-center md:justify-normal">Cześć tu Kasia</h3>
-                <p className="md:text-[1.2vw] text-xl md:leading-[2.3vw] leading-loose">Lorem ipsum dolor sit ia,dfgdfg dfdf gdf gdfgdfgdgdf dgfdfgdfdfgdfgdf dolodfgsdfgs dgd gdf dgdfgdfgdfg dgrgergdfgdsfg fgsdfggreger gdfgdfg ergedfgdfribus eviumremque tempore quae dolores? Unde soluta dolorum accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta dolorum temporibus quos omnis nobis repudiandae cumque vel non, corporis, veniam ratione. Nam autem voluptatem nihil accusantium illum amet commodi.</p>
+            <div className="bg-gray-100 text-left flex flex-col md:pt-[8vw] py-20 md:py-0 px-10 md:px-0 mx-[3vw] mb-5 md:mb-0 md:mx-0 md:mt-0 md:pl-[12vw] md:pr-[8vw] md:pb-[8vw] md:w-[54vw] md:h-[60vw] md:absolute md:top-[7vw] md:left-[38vw] md:z-0">
+                <h3 className="flex md:text-[1.6vw] text-4xl pb-12 md:pb-[2vw] justify-center md:justify-normal">Cześć, tu Kasia!</h3>
+                <p className="md:text-[1.2vw] text-xl md:leading-[2.3vw] leading-loose">Twórczyni marki Glow&Savor - przestrzeni, w której zdrowie spotyka się z pięknem, a codzienność nabiera wyjątkowego smaku.</p>
+                <p className="md:text-[1.2vw] text-xl md:leading-[2.3vw] leading-loose">Od zawsze fascynuje mnie harmonia – między ciałem a duszą, między naturą a sztuką, między ruchem a spokojem. Kocham taniec, bo to język emocji bez słów oraz pilates, który pozwala mi wsłuchać się w swoje ciało, budować jego siłę i elastyczność z uważnością i szacunkiem. Uwielbiam naturę, bo przypomina mi o prostocie i autentycznym pięknie oraz uwrażliwia mnie na nie od środka.</p>
+                <p className="md:text-[1.2vw] text-xl md:leading-[2.3vw] leading-loose">Pasjonuję się dietetyką. Jest ona dla mnie nie tylko nauką, ale sztuką troski o siebie. Kocham również aktorstwo - magię wchodzenia w różne światy, odkrywania w sobie nowych odcieni i kreowania swojej pewności siebie. Wrażliwość i sztuka to dla mnie dwa nierozłączne elementy - moje sposoby na widzenie, rozumienie i przeżywanie rzeczywistości.</p>
+                <p className="md:text-[1.2vw] text-xl md:leading-[2.3vw] leading-loose">Oprócz tego tworzę, piszę wiersze, smakuję życie - w każdej jego odsłonie.</p>
             </div>
     </div>
 
@@ -20,12 +21,12 @@ const About = () => {
         <div className="flex flex-col md:text-[1.4vw] md:px-[3vw] px-5 md:pt-[6vw] md:gap-[1vw]">
             <div className="flex flex-row justify-center md:gap-[1vw] gap-3 py-8 md:py-0 items-center">
                 <span className="md:text-[0.8vw] text-[2vw] items-center">KRÓTKO O</span>
-                <span className="md:text-[2.5vw] text-5xl font-[HighSummit]">planowaniu</span>
+                <span className="md:text-[2.5vw] text-5xl font-[HighSummit]">marce</span>
             </div>
             <div className="flex flex-col md:gap-[2vw] gap-8 md:text-[1.2vw] text-xl md:leading-[2.2vw] leading-loose">
-            <p className="">Lorem ipsum,  provident, , adipisicing elit. Vel at, offg elit. illcipit vit eveniet simuibusdam eius amet delectus tempora repudiandae consectetur!Lorem</p>
-            <p className="">Lorem ipsum,  provident, , enda oquam praesentium dolores, quis sapien sit amet consectetur adipisicing elit. Mollitia quam dolorem doloribus voluptas, tenetur illo quia sequi magnam suscipit vitae accusantium eveniet similique quibusdam eius amet delectus tempora repudiandae consectetur!Lorem</p>
-            <p className="">Lorem ipsum, dolor sit amet ctionem libero neque dignipis nobis suscipit perspiaudantium et in ipsa eos!Lorem ipsum dolor sit, amet consectecing elit. Qus s itaque molestiae consequatur, esse ut. Odio eligendi ea numquam praesentium dolores, quis sapiente voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quam dolorem doloribus voluptas, tenetur illo quia sequi magnam suscipit vitae accusantium eveniet similique quibusdam eius amet delectus tempora repudiandae consectetur!Lorem</p>
+            <p className="">Glow&Savor powstało z potrzeby dzielenia się tym, co dla mnie najważniejsze – zdrowym odżywianiem, uważnym smakowaniem życia i celebracją piękna, które zaczyna się od wewnątrz. To moja przestrzeń i moje zaproszenie dla Ciebie – byś mogła poczuć, że dbanie o siebie może być nie tylko proste, ale i pełne magii.</p>
+            <p className="">Ale Glow&Savor to coś więcej niż zdrowe odżywianie – to przestrzeń, w której każda z nas może na nowo odnaleźć siebie. To miejsce, które inspiruje do odkrywania pasji, do rozsmakowania się w tym, co naprawdę kochasz, i do pielęgnowania tego, co daje Ci przestrzeń do wzrostu. To przypomnienie, że warto się zatrzymać, wsłuchać w siebie i celebrować to, co sprawia, że serce bije mocniej. Glow&Savor to zaproszenie do świata, w którym dbanie o siebie nie jest obowiązkiem, lecz pięknym rytuałem – pełnym smaku, ruchu, inspiracji, pasji i świadomego życia.</p>
+            <p className="">Pozwól sobie zasmakować w tym, co Cię uszczęśliwia, i błyszcz – na swoich własnych zasadach.</p>
             </div>
         </div>
         <img src="/assets/img-8.jpg"
