@@ -1,5 +1,6 @@
 import React from "react";
 import ContactForm from "../components/ContactForm";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
     return (
@@ -10,11 +11,11 @@ const Contact = () => {
           <div className="w-full h-fit flex flex-col gap-15 md:gap-0 md:bg-gray-100 text-left md:px-[5vw] md:py-[8vw] md:mt-[5vw] md:mr-[2vw]">
             <div className="flex md:flex-row flex-col md:justify-between items-center gap-5">
               <h3 className="md:text-[1.8vw] text-3xl font-semibold">Bądźmy w kontakcie</h3>
-              <p className=" text-gray-600 md:mt-[0.5vw] md:text-[1.5vw] text-2xl">+48 123 456 789</p>
+              <p className=" text-gray-600 md:mt-[0.5vw] md:text-[1.5vw] text-2xl">+48 733 981 239</p>
             </div>
             <div className="flex md:flex-row flex-col md:justify-between items-center gap-5">
               <h3 className="md:text-[1.8vw] text-3xl font-semibold md:mt-[5vw]">Masz pytanie?</h3>
-              <p className=" text-gray-600 md:mt-[5vw] md:text-[1.5vw] text-2xl">kontakt@mojastrona.pl</p>
+              <p className=" text-gray-600 md:mt-[5vw] md:text-[1.5vw] text-2xl">glowandsavor@gmail.com</p>
             </div>
             <div className="flex md:flex-row flex-col md:justify-between items-center gap-5">
               <h3 className="md:text-[1.8vw] text-3xl font-semibold md:mt-[5vw]">Godziny pracy</h3>
@@ -22,14 +23,10 @@ const Contact = () => {
             </div>
             <div className="flex md:flex-row flex-col md:justify-between items-center md:mt-[5vw] gap-5">
               <h3 className="md:text-[1.8vw] text-3xl font-semibold">Śledź mnie</h3>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="md:mt-2 text-blue-600 flex items-center"
-            >
-              <img src="assets/icons/instagram.svg" alt="Instagram" className="md:w-6 md:h-6 md:mr-2" />
-            </a>
+              <Link to="https://www.instagram.com/glowandsavor" target="_blank" className="flex gap-[0.5vw] hover:text-blue-400 text-gray-600 ">
+                  <img src="assets/icons/instagram.svg" alt="Instagram" className="w-12 md:w-[2vw] hover:opacity-70 hover:fill-blue-400 fill-gray-600" />
+                  <span className="md:text-[1.5vw] text-2xl font-thin font-[HankenGrotesk]">glowandsavor</span>
+              </Link>
             </div>
             </div>
           </div>

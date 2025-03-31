@@ -9,7 +9,7 @@ import About from "./pages/About.jsx";
 import Blog from "./pages/Blog.jsx";
 import Contact from "./pages/Contact.jsx";
 import Home from "./pages/Home.jsx";
-// import Ebook from "./pages/Ebook.jsx";
+import Ebook from "./pages/Ebook.jsx";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -22,7 +22,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/ebook" element={<Ebook />} /> */}
+        <Route path="/ebook" element={<Ebook />} />
       </Routes>
       <Footer />
     </Router>

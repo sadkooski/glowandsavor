@@ -1,37 +1,67 @@
-// import React, { useState } from "react";
-// import CheckoutButton from "../components/CheckoutButton";
+import React from "react";
 
-// const Ebook = () => {
-//     const [email, setEmail] = useState("");
-//     const [phone, setPhone] = useState("");
+const EbookPage = () => {
+    return (
+        <div className=" bg-gray-100 flex flex-col items-center justify-center py-[4vw]">
+            <div className="w-[80vw] mx-auto bg-white shadow-lg rounded-lg p-[2vw]">
+                {/* Nagłówek */}
+                <h1 className="text-[3.5vw] font-bold text-center text-gray-800 mb-[2vw]">
+                    Koktajle białkowo-kolagenowe
+                </h1>
 
-//     return (
-//     <div className="w-full min-h-screen flex flex-col items-center justify-center p-5">
-//         <h2 className="text-5vw font-bold">Kup E-booka</h2>
-//         <img src="/assets/img-9.jpg" alt="E-book" className="w-1/3 my-5" />
-//         <p className="text-2vw text-center max-w-2xl">
-//         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eum id sapiente error fugiat voluptates excepturi molestiae dolore cupiditate consectetur molestias voluptas maiores, harum itaque. Iste unde dolore assumenda a.
-//         </p>
+                {/* Zdjęcia */}
+                <div className="grid grid-cols-2 md:grid-cols-2 gap-[2vw] mb-6">
+                    <div>
+                        <img
+                            src="/assets/img-1.jpg"
+                            alt="Ebook - Kolagen"
+                            className="w-full h-[30vw] object-cover rounded-lg"
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="/assets/img-2.jpg"
+                            alt="Koktajl"
+                            className="w-full h-[30vw] object-cover rounded-lg"
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="/assets/img-3.jpg"
+                            alt="Ebook - Kolagen"
+                            className="w-full h-[30vw] object-cover rounded-lg"
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="/assets/img-4.jpg"
+                            alt="Koktajl"
+                            className="w-full h-[30vw] object-cover rounded-lg"
+                        />
+                    </div>
+                </div>
 
-//         {/* Formularz z danymi użytkownika */}
-//         <input
-//             type="email"
-//             placeholder="Podaj email"
-//             value={email}
-//             onChange={(e) => setEmail(e.target.value)}
-//             className="mb-4 p-2"
-//         />
-//         <input
-//             type="tel"
-//             placeholder="Podaj numer telefonu"
-//             value={phone}
-//             onChange={(e) => setPhone(e.target.value)}
-//             className="mb-4 p-2"
-//         />
-        
-//         <CheckoutButton email={email} phone={phone} />
-//     </div>
-//     );
-// };
+                {/* Opis */}
+                <p className="text-[2vw] text-gray-700 text-center my-[3vw] mx-[3vw]">
+                    Dowiedz się, jak w prosty sposób przygotować pyszne koktajle z kolagenem, które
+                    poprawią kondycję Twojej skóry i zdrowia. Mój ebook to zbiór przepisów na zdrowe
+                    napoje, które możesz łatwo wprowadzić do swojej codziennej diety.
+                </p>
 
-// export default Ebook;
+                {/* Przycisk Kup Teraz */}
+                <div className="flex justify-center">
+                    <a
+                        href="https://allegro.pl/aukcja/your-ebook-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-blue-600 text-white px-[3vw] py-[1vw] rounded-md text-[2vw] hover:bg-blue-700 transition"
+                    >
+                        Kup Teraz
+                    </a>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default EbookPage;

@@ -6,14 +6,15 @@ const Footer = () => {
         <footer className="bg-white  pmd:b-[5vw] md:pt-[5vw] md:mt-[3vw] w-full">
             <div className="md:mx-[8vw] px-[6vw] md:px-0">
                 {/* Główna sekcja footer */}
-                <div className="flex flex-col md:flex-row items-center justify-between border-b-1 pt-25 md:pt-0 border-black md:pb-[3vw]">
+                <div className="flex flex-col md:flex-row items-center justify-between border-b-1 pt-20 md:pt-0 pb-7 border-black md:pb-[4vw]">
                     {/* Tekst po lewej */}
                     <p className="md:text-[0.6vw] text-xs">&copy; 2025 GLOW&SAVOR CREATIONS</p>
 
                     {/* Linki na środku */}
-                    <div className="flex md:gap-[6vw] md:text-[1.2vw] pt-10 md:mx-auto">
-                        <Link to="https://instagram.com" target="_blank" className="hover:text-blue-400 md:pr-[12vw]">
+                    <div className="flex md:gap-[6vw] md:text-[1.2vw] md:mx-auto pt-18 md:pt-0">
+                        <Link to="https://www.instagram.com/glowandsavor" target="_blank" className="flex gap-[0.5vw] hover:text-blue-400 md:pr-[12vw]">
                         <img src="assets/icons/instagram.svg" alt="Instagram" className="w-12 md:w-[2vw] hover:opacity-70 hover:fill-blue-400" />
+                        <span className="font-thin font-[HankenGrotesk]">glowandsavor</span>
                         </Link>
                     </div>
 

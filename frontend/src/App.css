@@ -39,7 +39,7 @@
 .bg-animation {
   background-size: cover;
   background-position: center;
-  animation: slideFromRight 25s infinite; /* Zwiększamy całkowity czas animacji */
+  animation: slideFromRight 35s infinite linear; /* Zwiększamy całkowity czas animacji */
 }
 
 /* Definiujemy animację */
@@ -50,23 +50,23 @@
   }
   25% {
     background-image: url('/assets/header-bg.jpeg'); /* Nadal pierwszy obrazek */
-    background-position: 50% cover; /* Przesuwa się na środek */
+    background-position: 100% cover; /* Przesuwa się na środek */
   }
   33% {
-    background-image: url('/assets/img-2.jpg'); /* Zmiana na drugi obrazek */
-    background-position: 50% cover; /* Na środku */
+    background-image: url('/assets/img-11.jpg'); /* Zmiana na drugi obrazek */
+    background-position: 100% cover; /* Na środku */
   }
   58% {
-    background-image: url('/assets/img-2.jpg'); /* Nadal drugi obrazek */
-    background-position: 50% cover; /* Na środku */
+    background-image: url('/assets/img-11.jpg'); /* Nadal drugi obrazek */
+    background-position: 100% cover; /* Na środku */
   }
   66% {
-    background-image: url('/assets/img-3.jpg'); /* Zmiana na trzeci obrazek */
-    background-position: 50% cover; /* Na środku */
+    background-image: url('/assets/img-12.jpg'); /* Zmiana na trzeci obrazek */
+    background-position: 100% cover; /* Na środku */
   }
   91% {
-    background-image: url('/assets/img-3.jpg'); /* Nadal trzeci obrazek */
-    background-position: 50% cover; /* Na środku */
+    background-image: url('/assets/img-12.jpg'); /* Nadal trzeci obrazek */
+    background-position: 100% cover; /* Na środku */
   }
   100% {
     background-image: url('/assets/header-bg.jpeg'); /* Wracamy do pierwszego obrazka */

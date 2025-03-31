@@ -8,7 +8,7 @@ const About = () => {
                 alt="Kontakt"
                 className="md:w-[38vw] md:h-full object-cover md:object-right-top md:z-1"/>
 
-            <div className="bg-gray-100 text-left flex flex-col md:pt-[8vw] py-20 md:py-0 px-10 md:px-0 mx-[3vw] mb-5 md:mb-0 md:mx-0 md:mt-0 md:pl-[12vw] md:pr-[8vw] md:pb-[8vw] md:w-[54vw] md:h-[60vw] md:absolute md:top-[7vw] md:left-[38vw] md:z-0">
+            <div className="bg-gray-100 text-left flex flex-col md:pt-[8vw] py-20 md:py-0 px-10 md:px-0 mx-[3vw] my-5 md:mb-0 md:mx-0 md:mt-0 md:pl-[12vw] md:pr-[8vw] md:pb-[8vw] md:w-[54vw] md:h-[60vw] md:absolute md:top-[7vw] md:left-[38vw] md:z-0">
                 <h3 className="flex md:text-[1.6vw] text-4xl pb-12 md:pb-[2vw] justify-center md:justify-normal">Cześć, tu Kasia!</h3>
                 <p className="md:text-[1.2vw] text-xl md:leading-[2.3vw] leading-loose">Twórczyni marki Glow&Savor - przestrzeni, w której zdrowie spotyka się z pięknem, a codzienność nabiera wyjątkowego smaku.</p>
                 <p className="md:text-[1.2vw] text-xl md:leading-[2.3vw] leading-loose">Od zawsze fascynuje mnie harmonia – między ciałem a duszą, między naturą a sztuką, między ruchem a spokojem. Kocham taniec, bo to język emocji bez słów oraz pilates, który pozwala mi wsłuchać się w swoje ciało, budować jego siłę i elastyczność z uważnością i szacunkiem. Uwielbiam naturę, bo przypomina mi o prostocie i autentycznym pięknie oraz uwrażliwia mnie na nie od środka.</p>

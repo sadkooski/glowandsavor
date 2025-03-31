@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import "../App.css"; // Upewnij się, że ścieżka do pliku CSS jest poprawna
+import "../App.css";
 
 const Header = () => {
     const location = useLocation();
@@ -21,6 +21,9 @@ const Header = () => {
                             <Link to="/blog" className=" hover:text-blue-400">BLOG</Link>
                         </li>
                         <li>
+                            <Link to="/ebook" className=" hover:text-blue-400">EBOOK</Link>
+                        </li>
+                        <li>
                             <Link to="/about" className=" hover:text-blue-400">O MNIE</Link>
                         </li>
                         <li>
@@ -33,10 +36,10 @@ const Header = () => {
             {/* Nowa sekcja pod nawigacją - tylko na stronie głównej */}
             {isHome && (
                 <div className="w-full flex flex-col text-left md:text-center gap-1 md:gap-0 justify-center md:mt-auto">
-                    <h2 className="text-3xl leading-snug md:leading-none pt-15 md:text-[2.5vw] font-bold md:mb-[3vw]">Twoje źródło inspiracji dla zdrowia i piękna od wewnątrz </h2>
-                    <p className="md:hidden text-base pb-30">Ebook z koktajlami z kolagenem jest już dostępny</p>
+                    <h2 className="text-3xl leading-snug md:leading-none pt-15 md:text-[2.5vw] font-bold md:mb-[3vw]">Ebook z koktajlami z kolagenem jest już dostępny</h2>
+                    <p className="md:hidden text-base pb-30">Twoje źródło inspiracji dla zdrowia i piękna od wewnątrz</p>
                     <div className="w-full border-b-1 border-black"></div>
-                    <p className="hidden md:flex text-[1vw] text-center my-[2vw] justify-center">Ebook z koktajlami z kolagenem jest już dostępny</p>
+                    <p className="hidden md:flex text-[1vw] text-center my-[2vw] justify-center">Twoje źródło inspiracji dla zdrowia i piękna od wewnątrz</p>
                 </div>
             )}
         </header>
