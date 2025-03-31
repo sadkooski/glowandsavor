@@ -12,7 +12,6 @@ import Home from "./pages/Home.jsx";
 import Ebook from "./pages/Ebook.jsx";
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <Router>
