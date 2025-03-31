@@ -1,35 +1,33 @@
-name: Deploy Frontend to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # lub 'master', jeśli to główna gałąź repozytorium
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: 18  # Możesz zmienić na wersję, której używasz
+          node-version: '16'
 
       - name: Install dependencies
-        working-directory: frontend
         run: npm install
 
       - name: Build project
-        working-directory: frontend
         run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          token: ${{ secrets.GH_PAGES }}
-          branch: gh-pages
-          folder: frontend/dist  # Folder, który ma zostać opublikowany
-          clean: true
+          branch: gh-pages  # The branch you want to deploy to.
+          folder: dist      # The folder to deploy (dist is the default folder for the build output)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for access
