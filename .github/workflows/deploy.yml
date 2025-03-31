@@ -8,26 +8,26 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '16' # Lub wersja, której używasz
 
-      - name: Install dependencies
+      - name: Install dependencies (Frontend)
+        working-directory: frontend  # Zmieniamy katalog na 'frontend'
         run: npm install
 
       - name: Build project
+        working-directory: frontend  # Budujemy projekt w katalogu 'frontend'
         run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # The branch you want to deploy to.
-          folder: dist      # The folder to deploy (dist is the default folder for the build output)
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for access
+          branch: gh-pages
+          folder: frontend/dist  # Folder, który zawiera zbudowaną aplikację
+          token: ${{ secrets.GH_TOKEN }}
