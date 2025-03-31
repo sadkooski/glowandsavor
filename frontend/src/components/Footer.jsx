@@ -13,14 +13,14 @@ const Footer = () => {
                     {/* Linki na środku */}
                     <div className="flex md:gap-[6vw] md:text-[1.2vw] md:mx-auto pt-18 md:pt-0">
                         <Link to="https://www.instagram.com/glowandsavor" target="_blank" className="flex gap-[0.5vw] hover:text-blue-400 md:pr-[12vw]">
-                        <img src="assets/icons/instagram.svg" alt="Instagram" className="w-12 md:w-[2vw] hover:opacity-70 hover:fill-blue-400" />
+                        <img src="/glowandsavor/assets/icons/instagram.svg" alt="Instagram" className="w-12 md:w-[2vw] hover:opacity-70 hover:fill-blue-400" />
                         <span className="font-thin font-[HankenGrotesk]">glowandsavor</span>
                         </Link>
                     </div>
 
                     {/* Logo po prawej */}
                     <Link to="/" className="hover:text-blue-400 md:w-[12vw] w-40 md:absolute md:left-[81vw]">
-                    <img className="" src="/assets/icons/2.png" alt="" />
+                    <img className="" src="/glowandsavor/assets/icons/2.png" alt="" />
                     </Link>
                 </div>
 

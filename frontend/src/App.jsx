@@ -8,13 +8,13 @@ import Header from "./components/Header.jsx";
 import About from "./pages/About.jsx";
 import Blog from "./pages/Blog.jsx";
 import Contact from "./pages/Contact.jsx";
-import Home from "./pages/Home.jsx";
 import Ebook from "./pages/Ebook.jsx";
+import Home from "./pages/Home.jsx";
 
 function App() {
 
   return (
-    <Router>
+    <Router basename="/glowandsavor">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
