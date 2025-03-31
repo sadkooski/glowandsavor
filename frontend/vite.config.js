@@ -3,14 +3,11 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [tailwindcss()],
-  base: './', // Zmienione na nazwę Twojego repozytorium, jeśli potrzebujesz
+  base: './', // Zmień na nazwę swojego repo, jeśli potrzebujesz
   build: {
-    outDir: 'dist', // Folder, w którym będzie generowany build
+    outDir: 'dist',
   },
-  resolve: {
-    alias: {
-      // Zastępujemy 'crypto' z wbudowanego modułu na 'crypto-browserify'
-      crypto: 'crypto-browserify',
-    },
+  define: {
+    'global.crypto': '{}',  // Fix dla błędu z crypto
   },
 });
