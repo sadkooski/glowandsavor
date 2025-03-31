@@ -3,11 +3,14 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [tailwindcss()],
-  base: './', // Ustawienie bazy na repozytorium
+  base: './', // Zmienione na nazwę Twojego repozytorium, jeśli potrzebujesz
   build: {
-    outDir: 'dist', // Folder, gdzie będzie generowany build
+    outDir: 'dist', // Folder, w którym będzie generowany build
   },
-  define: {
-    'globalThis.crypto': 'require("crypto")', // Polifil dla getRandomValues
+  resolve: {
+    alias: {
+      // Zastępujemy 'crypto' z wbudowanego modułu na 'crypto-browserify'
+      crypto: 'crypto-browserify',
+    },
   },
 });
