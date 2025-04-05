@@ -1,33 +1,42 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../App.css";
+import { ImageSlider } from "./ImageSlider";
+
+const IMAGES = [
+    { url: "/glowandsavor/assets/bg-1.jpg", alt: "Car One" },
+    { url: "/glowandsavor/assets/bg-2.jpg", alt: "Car Two" },
+    { url: "/glowandsavor/assets/bg-3.jpg", alt: "Car Three" },
+    { url: "/glowandsavor/assets/bg-4.jpg", alt: "Car Four" },
+];
 
 const Header = () => {
     const location = useLocation();
     const isHome = location.pathname === "/";
 
     return (
-        <header className={`w-full px-[8vw] flex flex-col ${isHome ? "bg-cover bg-center h-[100vh] bg-animation" : "bg-white"}`}>
+        <header className="w-full px-[8vw] flex flex-col">
+            <ImageSlider imageUrls={IMAGES} /> {/* Zmieniono na `imageUrls` */}
             <div className={`mx-auto w-full flex justify-center md:justify-between items-center md:py-[8vw] text-[1vw] ${isHome ? "border-b-1 border-black md:border-b-0 md:border-transparent" : "border-b-0 border-transparent"}`}>
-                <Link to="/" className=" font-bold">
+                <Link to="/" className="font-bold">
                     <img className="w-50 md:w-[12vw] md:absolute md:top-[3vw]" src="/glowandsavor/assets/icons/5.png" alt="" />
                 </Link>
                 <nav className="hidden md:flex">
                     <ul className="flex gap-[5vw]">
                         <li>
-                            <Link to="/" className=" hover:text-blue-400">HOME</Link>
+                            <Link to="/" className="hover:text-blue-400">HOME</Link>
                         </li>
                         <li>
-                            <Link to="/blog" className=" hover:text-blue-400">BLOG</Link>
+                            <Link to="/blog" className="hover:text-blue-400">BLOG</Link>
                         </li>
                         <li>
-                            <Link to="/ebook" className=" hover:text-blue-400">EBOOK</Link>
+                            <Link to="/ebook" className="hover:text-blue-400">EBOOK</Link>
                         </li>
                         <li>
-                            <Link to="/about" className=" hover:text-blue-400">O MNIE</Link>
+                            <Link to="/about" className="hover:text-blue-400">O MNIE</Link>
                         </li>
                         <li>
-                            <Link to="/contact" className=" hover:text-blue-400">KONTAKT</Link>
+                            <Link to="/contact" className="hover:text-blue-400">KONTAKT</Link>
                         </li>
                     </ul>
                 </nav>
