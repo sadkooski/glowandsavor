@@ -4,7 +4,7 @@ import "../App.css";
 
 const Header = () => {
     const location = useLocation();
-    const isHome = location.pathname === "/home";
+    const isHome = location.pathname === "/";
 
     return (
         <header className={`w-full px-[8vw] flex flex-col ${isHome ? "bg-cover bg-center h-[100vh] bg-animation" : "bg-white"}`}>

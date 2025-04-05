@@ -3,7 +3,6 @@ import './App.css';
 import "./index.css";
 
 import {
-  Navigate,
   Route,
   BrowserRouter as Router,
   Routes
@@ -23,8 +22,7 @@ function App() {
     <Router basename="/glowandsavor">
       <Header />
       <Routes>
-        <Route path="/" element={<Navigate to="/home" replace />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} /> {/* Domyślna strona Home */}
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
@@ -35,4 +33,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
