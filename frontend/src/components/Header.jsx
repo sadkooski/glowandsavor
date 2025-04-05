@@ -4,13 +4,13 @@ import "../App.css";
 
 const Header = () => {
     const location = useLocation();
-    const isHome = location.pathname === "/";
+    const isHome = location.pathname === "/home";
 
     return (
         <header className={`w-full px-[8vw] flex flex-col ${isHome ? "bg-cover bg-center h-[100vh] bg-animation" : "bg-white"}`}>
             <div className={`mx-auto w-full flex justify-center md:justify-between items-center md:py-[8vw] text-[1vw] ${isHome ? "border-b-1 border-black md:border-b-0 md:border-transparent" : "border-b-0 border-transparent"}`}>
                 <Link to="/" className=" font-bold">
-                    <img className="w-50 md:w-[12vw] md:absolute md:top-[3vw]" src="/assets/icons/5.png" alt="" />
+                    <img className="w-50 md:w-[12vw] md:absolute md:top-[3vw]" src="/glowandsavor/assets/icons/5.png" alt="" />
                 </Link>
                 <nav className="hidden md:flex">
                     <ul className="flex gap-[5vw]">

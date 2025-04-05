@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [tailwindcss()],
-  base: './', // Zmień na nazwę swojego repo, jeśli potrzebujesz
+  base: '/glowandsavor/', // Zmień na nazwę swojego repo, jeśli potrzebujesz
   build: {
     outDir: 'dist',
   },
