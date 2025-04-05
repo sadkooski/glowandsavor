@@ -28,6 +28,7 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-center md:gap-[15vw] gap-20 md:text-[1.5vw] text-4xl md:pt-[1.5vw] md:pb-[4vw] py-15 md:py-0 font-[Didonesque]">
                     <Link to="/" className="hover:text-blue-400">Home</Link>
                     <Link to="/blog" className="hover:text-blue-400">Blog</Link>
+                    <Link to="/ebook" className="hover:text-blue-400">Ebook</Link>
                     <Link to="/about" className="hover:text-blue-400">O Mnie</Link>
                     <Link to="/contact" className="hover:text-blue-400">Kontakt</Link>
                 </div>
