@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className="bg-white  pmd:b-[5vw] md:pt-[5vw] md:mt-[3vw] w-full">
+        <footer className="bg-white  pmd:b-[5vw] md:pt-[5vw] w-full">
             <div className="md:mx-[8vw] px-[6vw] md:px-0">
                 {/* Główna sekcja footer */}
+                <div className=""></div>
                 <div className="flex flex-col md:flex-row items-center justify-between border-b-1 pt-20 md:pt-0 pb-7 border-black md:pb-[4vw]">
+                    
+                    
                     {/* Tekst po lewej */}
                     <p className="md:text-[0.6vw] text-xs">&copy; 2025 GLOW&SAVOR CREATIONS</p>
 
@@ -20,7 +23,7 @@ const Footer = () => {
 
                     {/* Logo po prawej */}
                     <Link to="/" className="hover:text-blue-400 md:w-[12vw] w-40 md:absolute md:left-[81vw]">
-                    <img className="" src="/glowandsavor/assets/icons/2.png" alt="" />
+                    <img className="" src="/glowandsavor/assets/icons/5.png" alt="" />
                     </Link>
                 </div>
 
@@ -29,7 +32,7 @@ const Footer = () => {
                     <Link to="/" className="hover:text-blue-400">Home</Link>
                     <Link to="/blog" className="hover:text-blue-400">Blog</Link>
                     <Link to="/ebook" className="hover:text-blue-400">Ebook</Link>
-                    <Link to="/about" className="hover:text-blue-400">O Mnie</Link>
+                    <Link to="/about" className="hover:text-blue-400 whitespace-nowrap">O Mnie</Link>
                     <Link to="/contact" className="hover:text-blue-400">Kontakt</Link>
                 </div>
             </div>

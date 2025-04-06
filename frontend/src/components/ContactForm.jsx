@@ -99,7 +99,7 @@ const ContactForm = () => {
     <div className="md:mt-[2vw] bg-gray-100 md:px-[18vw] md:py-[4vw] py-15 px-15">
       <form onSubmit={handleSubmit} className="flex flex-col">
         {/* Imię i Email */}
-        <div className="flex flex-col md:flex-row md:gap-[8vw] gap-10 pb-10 md:pb-0 md:text-[1.3vw] text-left">
+        <div className="flex flex-col md:flex-row md:gap-[8vw] gap-5 pb-10 md:pb-0 md:text-[1.3vw] text-left">
           <div className="w-full">
             <label className="block text-gray-700 font-bold md:text-[1.7vw] text-3xl md:pl-[1vw] md:mb-[0.4vw] pb-3 md:pb-0">
               Imię
@@ -133,7 +133,7 @@ const ContactForm = () => {
         </div>
 
         {/* Wiadomość */}
-        <div className="md:mt-[2vw] flex flex-col md:gap-[1vw] gap-10 text-left md:text-[1.3vw]">
+        <div className="md:mt-[2vw] flex flex-col md:gap-[1vw] gap-5 text-left md:text-[1.3vw]">
           <div>
             <label className="block text-gray-700 font-bold md:text-[1.7vw] text-3xl md:px-[1vw] md:mb-[0.4vw] pb-3 md:pb-0">
               Tytuł wiadomości

@@ -1,9 +1,7 @@
-import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react";
-import React, { useState } from "react";
-import "../image-slider.css";
+import { Circle, CircleDot } from "lucide-react";
+import React, { useEffect, useState } from "react";
 
-
-export function ImageSlider({ imageUrls }) { // Zmieniono na `imageUrls`
+function ImageSlider({ imageUrls, interval = 10000 }) {
   const [imageIndex, setImageIndex] = useState(0);
 
   function showNextImage() {
@@ -14,15 +12,25 @@ export function ImageSlider({ imageUrls }) { // Zmieniono na `imageUrls`
     setImageIndex((index) => (index === 0 ? imageUrls.length - 1 : index - 1));
   }
 
-  // Upewniamy się, że imageUrls nie jest undefined przed wywołaniem map()
+  // ⏱ Auto-slide co kilka sekund
+  useEffect(() => {
+    const sliderInterval = setInterval(() => {
+      showNextImage();
+    }, interval);
+
+    return () => clearInterval(sliderInterval);
+  }, [imageIndex, interval]);
+
   if (!imageUrls || imageUrls.length === 0) {
-    return <p>Brak dostępnych zdjęć</p>; // Możesz zwrócić komunikat, jeśli brak zdjęć
+    return <p>Brak dostępnych zdjęć</p>;
   }
 
   return (
     <section className="relative w-full h-full overflow-hidden">
-      <div className="flex w-full h-full transition-transform duration-300 ease-in-out"
-           style={{ transform: `translateX(-${100 * imageIndex}%)` }}>
+      <div
+        className="flex w-full h-full transition-transform duration-300 ease-in-out"
+        style={{ transform: `translateX(-${100 * imageIndex}%)` }}
+      >
         {imageUrls.map(({ url, alt }, index) => (
           <img
             key={url}
@@ -33,24 +41,8 @@ export function ImageSlider({ imageUrls }) { // Zmieniono na `imageUrls`
         ))}
       </div>
 
-      {/* Buttons */}
-      <button
-        onClick={showPrevImage}
-        aria-label="Poprzednie zdjęcie"
-        className="absolute left-0 top-0 bottom-0 px-4 hover:bg-black/20 focus-visible:outline outline-white"
-      >
-        <ArrowBigLeft className="w-8 h-8 stroke-white fill-black" />
-      </button>
-      <button
-        onClick={showNextImage}
-        aria-label="Następne zdjęcie"
-        className="absolute right-0 top-0 bottom-0 px-4 hover:bg-black/20 focus-visible:outline outline-white"
-      >
-        <ArrowBigRight className="w-8 h-8 stroke-white fill-black" />
-      </button>
-
       {/* Dots */}
-      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1">
+      <div className="absolute bottom-2 py-[0.5vw] left-1/2 -translate-x-1/2 flex gap-1 z-1">
         {imageUrls.map((_, index) => (
           <button
             key={index}
@@ -61,7 +53,7 @@ export function ImageSlider({ imageUrls }) { // Zmieniono na `imageUrls`
             {index === imageIndex ? (
               <CircleDot className="stroke-white fill-black w-full h-full" />
             ) : (
-              <Circle className="stroke-white fill-black w-full h-full" />
+              <Circle className="fill-black w-full h-full" />
             )}
           </button>
         ))}
@@ -69,3 +61,5 @@ export function ImageSlider({ imageUrls }) { // Zmieniono na `imageUrls`
     </section>
   );
 }
+
+export default ImageSlider;

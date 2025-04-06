@@ -3,7 +3,7 @@ import React from "react";
 const Blog = () => {
     return (
         <section className="w-full bg-white md:px-[7vw] md:pt-[3vw]">
-            <div className="hidden md:flex justify-center items-center bg-[url('/assets/header-bg.jpeg')] bg-cover bg-center h-[24vw]">
+            <div className="hidden md:flex justify-center items-center bg-[url('/assets/blog-1.jpg')] bg-cover bg-center h-[24vw]">
                 <div className="flex flex-col text-gray-300 leading-none px-[20vw] gap-[0.8vw]">
                     <span className="text-[0.8vw] font-medium tracking-wider">BLOG</span>
                     <h3 className="text-[2.5vw]">Koktajle białkowo-kolagenowe jako dobry sposób przemycania składników odżywczych</h3>
@@ -12,7 +12,7 @@ const Blog = () => {
             </div>
 
             <div className="flex flex-col md:hidden">
-                <img className="" src="/glowandsavor/assets/header-bg.jpeg" alt="" />
+                <img className="" src="/glowandsavor/assets/blog-1.jpg" alt="" />
                 <div className="flex flex-col leading-tight px-25 gap-4 pt-8 pb-18">
                     <span className="text-base text-gray-400 font-medium tracking-wider">BLOG</span>
                     <h3 className="text-5xl leading-tight">Koktajle białkowo-kolagenowe jako dobry sposób przemycania składników odżywczych</h3>
@@ -31,7 +31,7 @@ const Blog = () => {
                 <p className="md:text-[1.2vw] text-2xl leading-loose">• Są szybkie i łatwe w przygotowaniu – wystarczy kilka minut, aby stworzyć pełnowartościowy posiłek, który można zabrać do pracy, na siłownię czy w podróż.</p>
                 <p className="md:text-[1.2vw] text-2xl leading-loose">• Można do nich dodać wartościowe składniki – to idealna baza do wzbogacania diety o zdrowe tłuszcze, owoce, warzywa czy superfoods.</p>
                 <div className="flex justify-center">
-                <img src="/glowandsavor/assets/img-13.jpg" alt="" className="md:w-[40vw] py-[1vw]"/>
+                <img src="/glowandsavor/assets/blog-2.jpg" alt="" className="md:w-[40vw] py-[1vw]"/>
                 </div>
                 <h3 className="md:text-[2.5vw] text-5xl leading-tight md:py-[0.5vw]">Jakie składniki można „przemycić” w koktajlach?</h3>
 

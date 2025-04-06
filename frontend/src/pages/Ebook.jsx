@@ -13,28 +13,28 @@ const EbookPage = () => {
                 <div className="grid grid-cols-2 md:grid-cols-2 gap-[2vw] mb-6">
                     <div>
                         <img
-                            src="/glowandsavor/assets/img-1.jpg"
+                            src="/glowandsavor/assets/ebook-1.jpg"
                             alt="Ebook - Kolagen"
                             className="w-full h-[30vw] object-cover rounded-lg"
                         />
                     </div>
                     <div>
                         <img
-                            src="/glowandsavor/assets/img-2.jpg"
+                            src="/glowandsavor/assets/ebook-2.jpg"
                             alt="Koktajl"
                             className="w-full h-[30vw] object-cover rounded-lg"
                         />
                     </div>
                     <div>
                         <img
-                            src="/glowandsavor/assets/img-3.jpg"
+                            src="/glowandsavor/assets/ebook-3.jpg"
                             alt="Ebook - Kolagen"
                             className="w-full h-[30vw] object-cover rounded-lg"
                         />
                     </div>
                     <div>
                         <img
-                            src="/glowandsavor/assets/img-4.jpg"
+                            src="/glowandsavor/assets/ebook-4.jpg"
                             alt="Koktajl"
                             className="w-full h-[30vw] object-cover rounded-lg"
                         />

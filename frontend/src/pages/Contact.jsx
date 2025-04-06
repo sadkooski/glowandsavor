@@ -34,9 +34,9 @@ const Contact = () => {
           {/* Prawa kolumna: Zdjęcie */}
           <div className="w-full md:w-1/2">
             <img
-              src="/glowandsavor/assets/img-1.jpg"
+              src="/glowandsavor/assets/contact-1.jpg"
               alt="Kontakt"
-              className="w-full h-[50vh] md:h-fit object-cover"
+              className="h-[60vh] md:h-[75vw] object-cover"
             />
           </div>
         </div>
