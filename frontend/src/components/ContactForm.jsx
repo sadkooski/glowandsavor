@@ -96,7 +96,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="md:mt-[2vw] bg-gray-100 md:px-[18vw] md:py-[4vw] py-15 px-15">
+    <div className="md:mt-[2vw] bg-gray-100 md:px-[18vw] md:py-[4vw] py-15 px-10">
       <form onSubmit={handleSubmit} className="flex flex-col">
         {/* Imię i Email */}
         <div className="flex flex-col md:flex-row md:gap-[8vw] gap-5 pb-10 md:pb-0 md:text-[1.3vw] text-left">

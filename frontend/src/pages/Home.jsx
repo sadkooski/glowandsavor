@@ -38,7 +38,7 @@ return (
       <div className="md:my-[10vw] md:pr-[8vw] ">
       <section className="flex flex-col md:flex-row bg-white relative">
 
-      <p className="md:w-[25%] md:pt-[5vw] px-[8vw] md:px-0 py-[3vw] md:py-0 md:text-[1.4vw] text-lg leading-8 md:leading-[2.5vw] font-normal md:absolute top-[10vw] md:top-0 md:left-[8vw] z-1 font-[Didonesque]">
+      <p className="md:w-[25%] md:pt-[5vw] px-[8vw] md:px-0 py-10 md:py-0 md:text-[1.4vw] text-lg leading-8 md:leading-[2.5vw] font-normal md:absolute top-[10vw] md:top-0 md:left-[8vw] z-1 font-[Didonesque]">
       Twórczyni marki Glow&Savor. Pasjonatka celebrowania. Miłośniczka piękna i natury, zakochana w tańcu oraz sztuce.
       </p>
 
