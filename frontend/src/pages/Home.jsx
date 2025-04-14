@@ -20,7 +20,7 @@ return (
       </div>
     
       <div className="md:w-[34%] md:h-[40vw] px-[6vw] md:px-0 ">
-        <img src="/glowandsavor/assets/home-1.jpg" alt="" className="h-full object-cover" />
+        <img src="/glowandsavor/assets/home-1.jpg" alt="" className="md:h-full object-cover" />
       </div>
 
       <div className="flex flex-col py-10 px-[6vw] md:px-0 md:w-[33%] md:pt-[7vw] md:text-[1.1vw] md:pb-[2vw] text-left gap-[2vw] leading-7 md:leading-[2.2vw] font-[HankenGrotesk]">
