@@ -203,8 +203,9 @@ const ContactForm = () => {
             <span className="font-[HankenGrotesk]">
               Wyrażam zgodę na przetwarzanie moich danych osobowych przez Glow & Savor w celu obsługi zapytania przesłanego za pomocą formularza kontaktowego, zgodnie z&nbsp;
             <Link to="/privacy-policy" className="text-blue-600 underline inline">
-              Polityką Prywatności
-            </Link>.
+                Polityką Prywatności
+            </Link>
+            .
             </span>
             </label>
               {errors.privacy && <p className="text-red-500 mt-2">{errors.privacy}</p>}

@@ -22,22 +22,22 @@ meta[name="format-detection"] {
 
 @font-face {
   font-family: 'Didonesque';
-  src: url('/assets/fonts/Didonesque-Roman.ttf') format('truetype'),
-  url('/assets/fonts/Didonesque-Bold.otf') format('truetype');
+  src: url('/assets/fonts/Didonesque-Roman.woff2') format('truetype'),
+  url('/assets/fonts/Didonesque-Bold.woff2') format('truetype');
   font-weight: 400 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'HankenGrotesk';
-  src: url('/assets/fonts/HankenGrotesk.ttf') format('truetype');
+  src: url('/assets/fonts/HankenGrotesk.woff2') format('truetype');
   font-weight: 400 700;
   font-style: normal italic;
 }
 
 @font-face {
   font-family: 'HighSummit';
-  src: url('/assets/fonts/HighSummit.ttf') format('truetype');
+  src: url('/assets/fonts/HighSummit.woff2') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
