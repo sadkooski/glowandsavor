@@ -67,7 +67,7 @@ const Header = () => {
                     </svg>
                 </button>
 
-                <nav className="flex flex-col gap-12 text-3xl font-medium w-full items-end">
+                <nav className="flex flex-col gap-12 text-3xl font-medium w-full items-end font-[Didonesque]">
                     <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>HOME</Link>
                     <Link to="/blog" onClick={() => setIsMobileMenuOpen(false)}>BLOG</Link>
                     <Link to="/ebook" onClick={() => setIsMobileMenuOpen(false)}>EBOOK</Link>

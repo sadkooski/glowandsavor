@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const ContactForm = () => {
   // Stan do przechowywania danych formularza
@@ -7,6 +8,7 @@ const ContactForm = () => {
     email: "",
     title: "",
     message: "",
+    privacy: false, // dodane pole zgody
   });
 
   // Stan do przechowywania błędów
@@ -15,6 +17,7 @@ const ContactForm = () => {
     email: "",
     title: "",
     message: "",
+    privacy: "", // dodane pole zgody
   });
 
   // Funkcja obsługująca zmianę wartości w formularzu
@@ -23,6 +26,19 @@ const ContactForm = () => {
     setFormData({
       ...formData,
       [name]: value,
+    });
+  };
+
+  // Funkcja obsługująca zmianę stanu checkboxa zgody
+  const handleCheckboxChange = (e) => {
+    const { name, checked } = e.target;
+    setFormData({
+      ...formData,
+      [name]: checked,
+    });
+    setErrors({
+      ...errors,
+      [name]: "",
     });
   };
 
@@ -65,6 +81,12 @@ const ContactForm = () => {
       valid = false;
     }
 
+    // Walidacja zgody na przetwarzanie danych
+    if (!formData.privacy) {
+      formErrors.privacy = "Musisz wyrazić zgodę na przetwarzanie danych osobowych.";
+      valid = false;
+    }
+
     setErrors(formErrors);
     return valid;
   };
@@ -72,9 +94,8 @@ const ContactForm = () => {
   // Funkcja obsługująca wysłanie formularza
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     if (validateForm()) {
-      // Przykład wysyłania danych na serwer
       try {
         const response = await fetch("http://localhost:5000/api/send-email", {
           method: "POST",
@@ -83,14 +104,16 @@ const ContactForm = () => {
           },
           body: JSON.stringify(formData),
         });
+  
         if (response.ok) {
-          alert("Wiadomość została wysłana!");
-          setFormData({ name: "", email: "", title: "", message: "" });
+          toast.success("Wiadomość została wysłana pomyślnie!");
+          setFormData({ name: "", email: "", title: "", message: "", privacy: false }); // Zresetuj formularz
         } else {
-          alert("Wystąpił błąd przy wysyłaniu wiadomości.");
+          toast.error("Wystąpił błąd przy wysyłaniu wiadomości.");
         }
       } catch (error) {
         console.error("Błąd przy wysyłaniu wiadomości:", error);
+        toast.error("Coś poszło nie tak. Spróbuj ponownie później.");
       }
     }
   };
@@ -164,6 +187,26 @@ const ContactForm = () => {
               className="w-full md:h-[15vw] h-60 md:px-[1vw] px-5 md:py-[0.8vw] py-2 text-xl md:text-[1.3vw] border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-400"
             />
             {errors.message && <p className="text-red-500">{errors.message}</p>}
+          </div>
+
+          {/* Checkbox zgody */}
+          <div className="">
+            <label className="flex items-start text-gray-600 text-sm md:text-[1vw]">
+              <input
+                type="checkbox"
+                name="privacy"
+                checked={formData.privacy}
+                onChange={handleCheckboxChange}
+                className="mr-2 mt-[0.3em]"
+            />
+            <span className="font-[HankenGrotesk]">
+              Wyrażam zgodę na przetwarzanie moich danych osobowych przez Glow & Savor w celu obsługi zapytania przesłanego za pomocą formularza kontaktowego, zgodnie z&nbsp;
+            <a href="/glowandsavor/privacy-policy" className="text-blue-600 underline inline">
+              Polityką Prywatności
+            </a>.
+            </span>
+            </label>
+              {errors.privacy && <p className="text-red-500 mt-2">{errors.privacy}</p>}
           </div>
 
           <button

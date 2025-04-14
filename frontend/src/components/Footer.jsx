@@ -9,7 +9,6 @@ const Footer = () => {
                 <div className=""></div>
                 <div className="flex flex-col md:flex-row items-center justify-between border-b-1 pt-20 md:pt-0 pb-7 border-black md:pb-[4vw]">
                     
-                    
                     {/* Tekst po lewej */}
                     <p className="md:text-[0.6vw] text-xs">&copy; 2025 GLOW&SAVOR CREATIONS</p>
 
