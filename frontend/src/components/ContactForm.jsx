@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const ContactForm = () => {
@@ -201,9 +202,9 @@ const ContactForm = () => {
             />
             <span className="font-[HankenGrotesk]">
               Wyrażam zgodę na przetwarzanie moich danych osobowych przez Glow & Savor w celu obsługi zapytania przesłanego za pomocą formularza kontaktowego, zgodnie z&nbsp;
-            <a href="/glowandsavor/privacy-policy" className="text-blue-600 underline inline">
+            <Link to="/privacy-policy" className="text-blue-600 underline inline">
               Polityką Prywatności
-            </a>.
+            </Link>.
             </span>
             </label>
               {errors.privacy && <p className="text-red-500 mt-2">{errors.privacy}</p>}
