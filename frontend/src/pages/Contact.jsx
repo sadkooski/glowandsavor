@@ -24,7 +24,7 @@ const Contact = () => {
             <div className="flex md:flex-row flex-col md:justify-between items-center md:mt-[5vw] gap-5">
               <h3 className="md:text-[1.8vw] text-3xl font-semibold">Śledź mnie</h3>
               <Link to="https://www.instagram.com/glowandsavor" target="_blank" className="flex gap-[0.5vw] hover:text-blue-400 text-gray-600 ">
-                  <img src="/glowandsavor/assets/icons/instagram.svg" alt="Instagram" className="w-10 md:w-[2vw] hover:opacity-70 hover:fill-blue-400 fill-gray-600" />
+                  <img src="/glowandsavor/assets/icons/instagram.svg" alt="Instagram" loading="lazy" className="w-10 md:w-[2vw] hover:opacity-70 hover:fill-blue-400 fill-gray-600" />
                   <span className="flex self-center leading-none md:text-[1.5vw] text-2xl font-thin font-[HankenGrotesk]">glowandsavor</span>
               </Link>
             </div>
@@ -36,6 +36,7 @@ const Contact = () => {
             <img
               src="/glowandsavor/assets/contact-1.jpg"
               alt="Kontakt"
+              loading="lazy"
               className="h-[60vh] md:h-[75vw] object-cover"
             />
           </div>

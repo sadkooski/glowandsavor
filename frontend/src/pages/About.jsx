@@ -6,6 +6,7 @@ const About = () => {
     <div className="flex flex-col w-full md:h-[55vw] md:pr-[7vw] md:mb-[12vw] md:relative">
             <img src="/glowandsavor/assets/about-1.jpg"
                 alt="Kontakt"
+                loading="lazy"
                 className="md:w-[45vw] md:h-full object-cover object-center md:z-1"/>
 
             <div className="bg-gray-100 text-left flex flex-col md:pt-[8vw] py-20 md:py-0 px-5 md:px-0 mx-[3vw] my-5 md:mb-0 md:mx-0 md:mt-0 md:pl-[12vw] md:pr-[8vw] md:pb-[8vw] md:w-[54vw] md:h-[60vw] md:absolute md:top-[7vw] md:left-[38vw] md:z-0">
@@ -31,35 +32,36 @@ const About = () => {
         </div>
         <img src="/glowandsavor/assets/about-2.jpg"
                 alt="Kontakt"
+                loading="lazy"
                 className="md:w-[58vw] object-cover" />
     </div>
 
     <div className="flex md:flex-row flex-col w-full md:mt-[5vw] md:pl-[2vw] md:gap-[1.5vw]">
         <div className="flex flex-col md:w-[65vw] md:gap-[2vw]">
-            <img className="object-cover md:h-[48vw]" src="/glowandsavor/assets/about-3.jpg" alt="" />
+            <img className="object-cover md:h-[48vw]" src="/glowandsavor/assets/about-3.jpg" alt="" loading="lazy" />
             <p className="md:text-[1.4vw] text-3xl leading-snug md:px-[1vw] px-7 md:py-0 py-15 md:text-left font-[Didonesque]">Glow&Savor to zaproszenie, by poczuć się dobrze - w swojej skórze, w swoim rytmie, w swoim życiu. Smakuj, celebruj i błyszcz! 
 
 </p>
         </div>
         <div className="flex flex-col md:w-[35vw] md:gap-[2vw]">
-            <img className="md:h-[24vw]" src="/glowandsavor/assets/about-4.jpg" alt="" />
+            <img className="md:h-[24vw]" src="/glowandsavor/assets/about-4.jpg" alt="" loading="lazy" />
             <p className="md:text-[1.4vw] text-3xl md:px-[2vw] px-7 md:py-0 py-15 font-[Didonesque]">“Życie smakuje najpełniej, gdy dajesz sobie przestrzeń na to, co kochasz.”
 
 </p>
-            <img className="md:h-[24vw]" src="/glowandsavor/assets/img-9.jpg" alt="" />
+            <img className="md:h-[24vw]" src="/glowandsavor/assets/img-9.jpg" alt="" loading="lazy" />
         </div>
     </div>
 
     <div className="flex flex-col w-full bg-gray-100 md:px-[13vw] md:pb-[1.5vw] md:mt-[3.5vw] md:relative">
         <div className="flex flex-col gap-10 md:gap-[1vw] md:px-[10vw] px-10 py-10 md:py-0 text-gray">
             <h3 className="md:text-[6vw] text-7xl font-medium md:leading-tight">Quote</h3>
-            <p className="md:text-[1vw] font-[HankenGrotesk-Italic]">“Kiedy zaczynasz od siebie – od uważności, troski i smaku – całe życie nabiera blasku.”</p>
+            <p className="md:text-[1vw] font-[HankenGrotesk] italic">“Kiedy zaczynasz od siebie – od uważności, troski i smaku – całe życie nabiera blasku.”</p>
             <span className="md:text-[2.5vw] text-4xl md:leading-none md:mt-[1vw] py-5 md:py-0 font-[HighSummit]">Kasia Sadkowska</span>
         </div>
 
         <div className="flex flex-col md:flex-row md:gap-[0.6vw] gap-4 bg-gray-200 md:mt-[2vw] md:mr-[4vw] md:h-[35vw]">
-            <img className="h-full md:w-[37%] object-cover" src="/glowandsavor/assets/about-5.jpg" alt="" />
-            <img className="h-full md:w-[30%] object-cover" src="/glowandsavor/assets/about-6.jpg" alt="" />
+            <img className="h-full md:w-[37%] object-cover" src="/glowandsavor/assets/about-5.jpg" alt="" loading="lazy" />
+            <img className="h-full md:w-[30%] object-cover" src="/glowandsavor/assets/about-6.jpg" alt="" loading="lazy" />
             <div className="flex flex-col md:gap-[1.5vw] pt-4 pb-7 md:pt-0 md:pb-0 px-10 md:px-0 gap-8 md:w-[25vw] md:absolute md:top-[28vw] md:left-[65vw]">
             <p className="md:text-[1.8vw] text-3xl leading-tight font-[Didonesque]">Prawdziwy blask zaczyna się od wewnątrz – rozsmakuj się w tym, co Cię uszczęśliwia</p>
             </div>
