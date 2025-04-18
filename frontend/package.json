@@ -2,7 +2,6 @@
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://sadkooski.github.io/glowandsavor/",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -15,6 +14,7 @@
     "@reduxjs/toolkit": "^2.6.0",
     "@tailwindcss/postcss": "^4.0.10",
     "@tailwindcss/vite": "^4.0.10",
+    "@vitejs/plugin-react": "^4.4.0",
     "crypto-browserify": "^3.12.1",
     "lucide-react": "^0.487.0",
     "react": "^19.0.0",

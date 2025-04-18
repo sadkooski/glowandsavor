@@ -20,7 +20,7 @@ const Header = () => {
             <div className={`${isHome ? "absolute top-0 justify-between h-full" : ""} w-full px-[8vw] flex flex-col`}>
                 <div className={`mx-auto w-full flex justify-center md:justify-between items-center md:py-[8vw] text-[1vw] ${isHome ? " md:border-b-0 md:border-transparent" : "border-b-0 border-transparent"}`}>
                     <Link to="/" className="font-bold">
-                        <img className="w-50 md:w-[12vw] md:absolute md:top-[3vw]" src="/glowandsavor/assets/icons/5.png" alt="" loading="lazy" />
+                        <img className="w-50 md:w-[12vw] md:absolute md:top-[3vw]" src="/glowandsavor/assets/icons/5.png" alt="" />
                     </Link>
                     <nav className="hidden md:flex">
                         <ul className="flex gap-[5vw]">
