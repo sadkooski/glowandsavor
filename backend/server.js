@@ -16,7 +16,7 @@ app.use(cors());
 app.use(express.json());
 
 // Ścieżka do folderu build frontendu
-const frontendPath = path.join(__dirname, "../frontend/dist");
+const frontendPath = path.join(__dirname, "dist");
 console.log("Serwuję pliki z:", frontendPath);
 
 // Serwowanie plików statycznych React
