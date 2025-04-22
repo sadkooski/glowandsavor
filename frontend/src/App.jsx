@@ -33,7 +33,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <Router basename="/glowandsavor">
+    <Router>
       <ScrollToTop />
       <Header />
       <Routes>
