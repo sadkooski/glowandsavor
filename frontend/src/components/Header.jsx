@@ -4,9 +4,9 @@ import "../App.css";
 import ImageSlider from "./ImageSlider";
 
 const IMAGES = [
-    { url: "/glowandsavor/assets/bg-1.jpg", alt: "Car One" },
-    { url: "/glowandsavor/assets/bg-2.jpg", alt: "Car Two" },
-    { url: "/glowandsavor/assets/bg-3.jpg", alt: "Car Three" },
+    { url: "/assets/bg-1.jpg", alt: "Car One" },
+    { url: "/assets/bg-2.jpg", alt: "Car Two" },
+    { url: "/assets/bg-3.jpg", alt: "Car Three" },
 ];
 
 const Header = () => {

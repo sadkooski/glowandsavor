@@ -4,7 +4,7 @@ const About = () => {
     return (
 <section className="w-full bg-white">
     <div className="flex flex-col w-full md:h-[55vw] md:pr-[7vw] md:mb-[12vw] md:relative">
-            <img src="/glowandsavor/assets/about-1.jpg"
+            <img src="/assets/about-1.jpg"
                 alt="Kontakt"
                 loading="lazy"
                 className="md:w-[45vw] md:h-full object-cover object-center md:z-1"/>
