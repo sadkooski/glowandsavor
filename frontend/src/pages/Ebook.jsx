@@ -13,7 +13,7 @@ const EbookPage = () => {
                 <div className="grid grid-cols-2 md:grid-cols-2 gap-[2vw] mb-6">
                     <div>
                         <img
-                            src="/glowandsavor/assets/ebook-1.jpg"
+                            src="/assets/ebook-1.jpg"
                             alt="Ebook - Kolagen"
                             loading="lazy"
                             className="w-full h-[30vw] object-cover rounded-lg"
@@ -21,7 +21,7 @@ const EbookPage = () => {
                     </div>
                     <div>
                         <img
-                            src="/glowandsavor/assets/ebook-2.jpg"
+                            src="/assets/ebook-2.jpg"
                             alt="Koktajl"
                             loading="lazy"
                             className="w-full h-[30vw] object-cover rounded-lg"
@@ -29,7 +29,7 @@ const EbookPage = () => {
                     </div>
                     <div>
                         <img
-                            src="/glowandsavor/assets/ebook-3.jpg"
+                            src="/assets/ebook-3.jpg"
                             alt="Ebook - Kolagen"
                             loading="lazy"
                             className="w-full h-[30vw] object-cover rounded-lg"
@@ -37,7 +37,7 @@ const EbookPage = () => {
                     </div>
                     <div>
                         <img
-                            src="/glowandsavor/assets/ebook-4.jpg"
+                            src="/assets/ebook-4.jpg"
                             alt="Koktajl"
                             loading="lazy"
                             className="w-full h-[30vw] object-cover rounded-lg"

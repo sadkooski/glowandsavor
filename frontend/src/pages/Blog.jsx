@@ -12,7 +12,7 @@ const Blog = () => {
             </div>
 
             <div className="flex flex-col md:hidden">
-                <img className="" src="/glowandsavor/assets/blog-1.jpg" alt="" loading="lazy" />
+                <img className="" src="/assets/blog-1.jpg" alt="" loading="lazy" />
                 <div className="flex flex-col leading-tight px-10 gap-4 pt-8 pb-8">
                     <span className="text-base text-gray-400 font-medium tracking-wider">BLOG</span>
                     <h3 className="text-3xl leading-tight">Koktajle białkowo-kolagenowe jako dobry sposób przemycania składników odżywczych</h3>
@@ -31,7 +31,7 @@ const Blog = () => {
                 <p className="md:text-[1.2vw] leading-loose">• Są szybkie i łatwe w przygotowaniu – wystarczy kilka minut, aby stworzyć pełnowartościowy posiłek, który można zabrać do pracy, na siłownię czy w podróż.</p>
                 <p className="md:text-[1.2vw] leading-loose">• Można do nich dodać wartościowe składniki – to idealna baza do wzbogacania diety o zdrowe tłuszcze, owoce, warzywa czy superfoods.</p>
                 <div className="flex justify-center">
-                <img src="/glowandsavor/assets/blog-2.jpg" alt="" loading="lazy" className="md:w-[40vw] py-[1vw]"/>
+                <img src="/assets/blog-2.jpg" alt="" loading="lazy" className="md:w-[40vw] py-[1vw]"/>
                 </div>
                 <h3 className="md:text-[2.5vw] text-3xl leading-tight md:py-[0.5vw]">Jakie składniki można „przemycić” w koktajlach?</h3>
 

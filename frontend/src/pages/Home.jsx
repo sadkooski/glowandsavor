@@ -20,7 +20,7 @@ return (
       </div>
     
       <div className="md:w-[34%] md:h-[40vw] px-[6vw] md:px-0 ">
-        <img src="/glowandsavor/assets/home-1.jpg" alt="" loading="lazy" className="md:h-full object-cover" />
+        <img src="/assets/home-1.jpg" alt="" loading="lazy" className="md:h-full object-cover" />
       </div>
 
       <div className="flex flex-col py-10 px-[6vw] md:px-0 md:w-[33%] md:pt-[7vw] md:text-[1.1vw] md:pb-[2vw] text-left gap-[2vw] leading-7 md:leading-[2.2vw] font-[HankenGrotesk]">
@@ -42,7 +42,7 @@ return (
       Twórczyni marki Glow&Savor. Pasjonatka celebrowania. Miłośniczka piękna i natury, zakochana w tańcu oraz sztuce.
       </p>
 
-      <img src="/glowandsavor/assets/home-2.jpg" alt="" loading="lazy" className="md:w-[70%] z-0 ml-auto object-cover"/>
+      <img src="/assets/home-2.jpg" alt="" loading="lazy" className="md:w-[70%] z-0 ml-auto object-cover"/>
 
       <div className="md:w-[30%] flex flex-col py-10 md:py-[2.5vw] px-[6vw] md:px-0 md:pl-[3vw] md:text-[1vw] text-left">
       <div className="flex flex-col gap-[2vw] leading-7 md:leading-[1.7vw] font-[HankenGrotesk]">
@@ -73,15 +73,15 @@ return (
       </a>
       </div>
       <ul className="w-full md:mt-[1vw] grid grid-cols-3 grid-rows-3">
-      <li className="w-full"><img src="/glowandsavor/assets/img-13.jpg" alt="Image 1" loading="lazy" className="w-full aspect-square object-cover" /></li>
-      <li className="w-full"><img src="/glowandsavor/assets/img-2.jpg" alt="Image 2" loading="lazy" className="w-full aspect-square object-cover" /></li>
-      <li className="w-full"><img src="/glowandsavor/assets/img-7.jpg" alt="Image 3" loading="lazy" className="w-full aspect-square object-cover" /></li>
-      <li className="w-full"><img src="/glowandsavor/assets/img-6.jpg" alt="Image 4" loading="lazy" className="w-full aspect-square object-cover" /></li>
-      <li className="w-full"><img src="/glowandsavor/assets/img-5.jpg" alt="Image 5" loading="lazy" className="w-full aspect-square object-cover" /></li>
-      <li className="w-full"><img src="/glowandsavor/assets/img-14.jpg" alt="Image 6" loading="lazy" className="w-full aspect-square object-cover" /></li>
-      <li className="w-full"><img src="/glowandsavor/assets/img-3.jpg" alt="Image 7" loading="lazy" className="w-full aspect-square object-cover" /></li>
-      <li className="w-full"><img src="/glowandsavor/assets/img-8.jpg" alt="Image 8" loading="lazy" className="w-full aspect-square object-cover" /></li>
-      <li className="w-full"><img src="/glowandsavor/assets/img-12.jpg" alt="Image 9" loading="lazy" className="w-full aspect-square object-cover" /></li>
+      <li className="w-full"><img src="/assets/img-13.jpg" alt="Image 1" loading="lazy" className="w-full aspect-square object-cover" /></li>
+      <li className="w-full"><img src="/assets/img-2.jpg" alt="Image 2" loading="lazy" className="w-full aspect-square object-cover" /></li>
+      <li className="w-full"><img src="/assets/img-7.jpg" alt="Image 3" loading="lazy" className="w-full aspect-square object-cover" /></li>
+      <li className="w-full"><img src="/assets/img-6.jpg" alt="Image 4" loading="lazy" className="w-full aspect-square object-cover" /></li>
+      <li className="w-full"><img src="/assets/img-5.jpg" alt="Image 5" loading="lazy" className="w-full aspect-square object-cover" /></li>
+      <li className="w-full"><img src="/assets/img-14.jpg" alt="Image 6" loading="lazy" className="w-full aspect-square object-cover" /></li>
+      <li className="w-full"><img src="/assets/img-3.jpg" alt="Image 7" loading="lazy" className="w-full aspect-square object-cover" /></li>
+      <li className="w-full"><img src="/assets/img-8.jpg" alt="Image 8" loading="lazy" className="w-full aspect-square object-cover" /></li>
+      <li className="w-full"><img src="/assets/img-12.jpg" alt="Image 9" loading="lazy" className="w-full aspect-square object-cover" /></li>
       </ul>
       </div>
 

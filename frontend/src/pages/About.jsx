@@ -30,7 +30,7 @@ const About = () => {
             <p className="">Pozwól sobie zasmakować w tym, co Cię uszczęśliwia, i błyszcz – na swoich własnych zasadach.</p>
             </div>
         </div>
-        <img src="/glowandsavor/assets/about-2.jpg"
+        <img src="/assets/about-2.jpg"
                 alt="Kontakt"
                 loading="lazy"
                 className="md:w-[58vw] object-cover" />
@@ -38,17 +38,17 @@ const About = () => {
 
     <div className="flex md:flex-row flex-col w-full md:mt-[5vw] md:pl-[2vw] md:gap-[1.5vw]">
         <div className="flex flex-col md:w-[65vw] md:gap-[2vw]">
-            <img className="object-cover md:h-[48vw]" src="/glowandsavor/assets/about-3.jpg" alt="" loading="lazy" />
+            <img className="object-cover md:h-[48vw]" src="/assets/about-3.jpg" alt="" loading="lazy" />
             <p className="md:text-[1.4vw] text-3xl leading-snug md:px-[1vw] px-7 md:py-0 py-15 md:text-left font-[Didonesque]">Glow&Savor to zaproszenie, by poczuć się dobrze - w swojej skórze, w swoim rytmie, w swoim życiu. Smakuj, celebruj i błyszcz! 
 
 </p>
         </div>
         <div className="flex flex-col md:w-[35vw] md:gap-[2vw]">
-            <img className="md:h-[24vw]" src="/glowandsavor/assets/about-4.jpg" alt="" loading="lazy" />
+            <img className="md:h-[24vw]" src="/assets/about-4.jpg" alt="" loading="lazy" />
             <p className="md:text-[1.4vw] text-3xl md:px-[2vw] px-7 md:py-0 py-15 font-[Didonesque]">“Życie smakuje najpełniej, gdy dajesz sobie przestrzeń na to, co kochasz.”
 
 </p>
-            <img className="md:h-[24vw]" src="/glowandsavor/assets/img-9.jpg" alt="" loading="lazy" />
+            <img className="md:h-[24vw]" src="/assets/img-9.jpg" alt="" loading="lazy" />
         </div>
     </div>
 
@@ -60,8 +60,8 @@ const About = () => {
         </div>
 
         <div className="flex flex-col md:flex-row md:gap-[0.6vw] gap-4 bg-gray-200 md:mt-[2vw] md:mr-[4vw] md:h-[35vw]">
-            <img className="h-full md:w-[37%] object-cover" src="/glowandsavor/assets/about-5.jpg" alt="" loading="lazy" />
-            <img className="h-full md:w-[30%] object-cover" src="/glowandsavor/assets/about-6.jpg" alt="" loading="lazy" />
+            <img className="h-full md:w-[37%] object-cover" src="/assets/about-5.jpg" alt="" loading="lazy" />
+            <img className="h-full md:w-[30%] object-cover" src="/assets/about-6.jpg" alt="" loading="lazy" />
             <div className="flex flex-col md:gap-[1.5vw] pt-4 pb-7 md:pt-0 md:pb-0 px-10 md:px-0 gap-8 md:w-[25vw] md:absolute md:top-[28vw] md:left-[65vw]">
             <p className="md:text-[1.8vw] text-3xl leading-tight font-[Didonesque]">Prawdziwy blask zaczyna się od wewnątrz – rozsmakuj się w tym, co Cię uszczęśliwia</p>
             </div>
