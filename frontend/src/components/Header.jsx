@@ -1,29 +1,45 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../App.css";
 import ImageSlider from "./ImageSlider";
 
 const IMAGES = [
-    { url: "/assets/bg-1.jpg", alt: "Car One" },
-    { url: "/assets/bg-2.jpg", alt: "Car Two" },
-    { url: "/assets/bg-3.jpg", alt: "Car Three" },
+    { url: "/assets/bg-2.jpg", alt: "Img One" },
+    { url: "/assets/bg-1.jpg", alt: "Img Two" },
+    { url: "/assets/bg-3.jpg", alt: "Img Three" },
+    { url: "/assets/ebook-1.jpg", alt: "Img Four" },
+
 ];
 
 const Header = () => {
     const location = useLocation();
     const isHome = location.pathname === "/";
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+useEffect(() => {
+    const handleResize = () => {
+        setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+}, []);
+
+const filteredImages = isMobile
+? [IMAGES[0], IMAGES[1], IMAGES[3]]
+: [IMAGES[0], IMAGES[1], IMAGES[2]];
 
     return (
         <header className={`${isHome ? "h-screen z-0" : ""}`}>
-            {isHome && <ImageSlider imageUrls={IMAGES} />}
+            {isHome && <ImageSlider imageUrls={filteredImages} />}
             <div className={`${isHome ? "absolute top-0 justify-between h-full" : ""} w-full px-[8vw] flex flex-col`}>
                 <div className={`mx-auto w-full flex justify-center md:justify-between items-center md:py-[8vw] text-[1vw] ${isHome ? " md:border-b-0 md:border-transparent" : "border-b-0 border-transparent"}`}>
                     <Link to="/" className="font-bold">
                         <img className="w-50 md:w-[12vw] md:absolute md:top-[3vw]" src="/assets/icons/5.png" alt="" loading="lazy" />
                     </Link>
                     <nav className="hidden md:flex">
-                        <ul className="flex gap-[5vw]">
+                        <ul className="flex gap-[5vw] text-[1.2vw]">
                             <li><Link to="/" className="hover:text-blue-400">HOME</Link></li>
                             <li><Link to="/blog" className="hover:text-blue-400">BLOG</Link></li>
                             <li><Link to="/ebook" className="hover:text-blue-400">EBOOK</Link></li>
@@ -33,7 +49,7 @@ const Header = () => {
                     </nav>
 
                     <div className="md:hidden absolute top-18 right-[8vw] z-50">
-                        <button onClick={() => setIsMobileMenuOpen(true)}>
+                        <button className="bg-transparent border-none appearance-none p-0 m-0 hover:bg-transparent active:bg-transparent focus:bg-transparent focus:outline-none" onClick={() => setIsMobileMenuOpen(true)}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8 text-black">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
