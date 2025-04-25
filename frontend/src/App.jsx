@@ -12,6 +12,7 @@ import {
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import EbookTerms from "./pages/EbookTerms";
 
 import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
@@ -43,6 +44,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/ebook" element={<Ebook />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/ebook-terms" element={<EbookTerms  />} />
       </Routes>
       <Footer />
       <ToastContainer

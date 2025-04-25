@@ -62,7 +62,10 @@ const EbookPurchaseSection = () => {
             {/* Info + przycisk */}
             <div className="md:text-[1.8vw] text-gray-800 leading-relaxed mt-[4vw] text-left">
                 <p className="mb-[1vw]">
-                    Po dokonaniu płatności otrzymasz e-booka na podany adres e-mail w ciągu 24 godzin.
+                    Po dokonaniu płatności otrzymasz e-booka na podany adres e-mail w ciągu 24 godzin. Przed zakupem zapoznaj się z{" "}
+                <a href="/ebook-terms" className="text-blue-600 underline hover:text-blue-800">
+                    regulaminem sprzedaży
+                </a>.
                 </p>
                 <p className="mb-[1vw]">W razie pytań – napisz śmiało!</p>
                 <p className="mb-[2vw]">Zakupu możesz dokonać również na stronie Empik.com od 28 kwietnia.</p>
