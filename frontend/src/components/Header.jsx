@@ -77,7 +77,7 @@ const filteredImages = isMobile
                     isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
                 }`}
             >
-                <button onClick={() => setIsMobileMenuOpen(false)} className="mt-12">
+                <button onClick={() => setIsMobileMenuOpen(false)} type="button" className="mt-12 bg-transparent border-none appearance-none p-0 m-0 hover:bg-transparent active:bg-transparent focus:bg-transparent focus:outline-none">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-black bg-transparent" fill="none" background="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                     </svg>
