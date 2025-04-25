@@ -49,7 +49,7 @@ const filteredImages = isMobile
                     </nav>
 
                     <div className="md:hidden absolute top-18 right-[8vw] z-50">
-                        <button className="bg-transparent border-none appearance-none p-0 m-0 hover:bg-transparent active:bg-transparent focus:bg-transparent focus:outline-none" onClick={() => setIsMobileMenuOpen(true)}>
+                        <button onClick={() => setIsMobileMenuOpen(true)}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8 text-black">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
@@ -78,7 +78,7 @@ const filteredImages = isMobile
                 }`}
             >
                 <button onClick={() => setIsMobileMenuOpen(false)} className="mt-12">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-black bg-transparent" fill="none" background="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>

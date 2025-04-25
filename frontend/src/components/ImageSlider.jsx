@@ -48,8 +48,8 @@ function ImageSlider({ imageUrls, interval = 10000 }) {
             key={index}
             aria-label={`Zobacz obraz ${index + 1}`}
             onClick={() => setImageIndex(index)}
-            className="w-4 h-4 hover:scale-125 transition-transform bg-transparent border-none appearance-none p-0 m-0 focus:outline-none"
-            >
+            className="w-4 h-4 hover:scale-125 transition-transform"
+          >
             {index === imageIndex ? (
               <CircleDot className="stroke-white fill-black w-full h-full" />
             ) : (
