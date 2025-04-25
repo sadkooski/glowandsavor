@@ -36,6 +36,5 @@ meta[name="format-detection"] {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 button svg {
-  background: transparent !important;
-  fill: none !important;
+  background: transparent;
 }
