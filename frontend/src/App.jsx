@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import './App.css';
+import "./App.css";
 import "./index.css";
 
 import {
   Route,
   BrowserRouter as Router,
   Routes,
-  useLocation
+  useLocation,
 } from "react-router-dom";
 
 import { ToastContainer } from "react-toastify";
@@ -44,21 +44,22 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/ebook" element={<Ebook />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/ebook-terms" element={<EbookTerms  />} />
+        <Route path="/ebook-terms" element={<EbookTerms />} />
       </Routes>
       <Footer />
       <ToastContainer
-  position="top-right"
-  autoClose={5000}
-  hideProgressBar={false}
-  newestOnTop={false}
-  closeOnClick
-  rtl={false}
-  pauseOnFocusLoss
-  draggable
-  pauseOnHover
-  theme="light"
-/>    </Router>
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />{" "}
+    </Router>
   );
 }
 

@@ -1,13 +1,13 @@
-import tailwindcss from '@tailwindcss/vite';
-import { defineConfig } from 'vite';
+import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [tailwindcss()],
-  base: '/', // Zmień na nazwę swojego repo, jeśli potrzebujesz
+  base: "/", // Zmień na nazwę swojego repo, jeśli potrzebujesz
   build: {
-    outDir: 'dist',
+    outDir: "dist",
   },
   define: {
-    'global.crypto': '{}',  // Fix dla błędu z crypto
+    "global.crypto": "{}", // Fix dla błędu z crypto
   },
 });
