@@ -100,7 +100,7 @@ const EbookPurchaseSection = () => {
         </p>
         <p className="mb-[1vw]">W razie pytań – napisz śmiało!</p>
         <p className="mb-[2vw]">
-          Zakupu możesz dokonać również na stronie Empik.com od 28 kwietnia.
+          Już wkrótce zakupu możesz dokonać również na stronie Empik.com.
         </p>
 
         <div className="flex justify-center mt-[2vw]">
