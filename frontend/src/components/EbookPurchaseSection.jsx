@@ -14,7 +14,7 @@ const EbookPurchaseSection = () => {
           {/* Przelew tradycyjny */}
           <div>
             <p className="mb-[1vw]">
-              Aby zakupić e-booka, wykonaj przelew na poniższe dane:
+              Aby zakupić eBooka, wykonaj przelew na poniższe dane:
             </p>
             <ul className="list-inside list-none mb-[1vw]">
               <li>
@@ -85,10 +85,10 @@ const EbookPurchaseSection = () => {
         </div>
       </div>
 
-      {/* Info + przycisk */}
+      {/* Info o wysyłce i regulamin */}
       <div className="md:text-[1.8vw] text-gray-800 leading-relaxed mt-[4vw] text-left">
         <p className="mb-[1vw]">
-          Po dokonaniu płatności otrzymasz e-booka na podany adres e-mail w
+          Po dokonaniu płatności otrzymasz eBooka na podany adres e-mail w
           ciągu 24 godzin. Przed zakupem zapoznaj się z{" "}
           <Link
             to="/ebook-terms"
@@ -100,18 +100,49 @@ const EbookPurchaseSection = () => {
         </p>
         <p className="mb-[1vw]">W razie pytań – napisz śmiało!</p>
         <p className="mb-[2vw]">
-          Już wkrótce zakupu możesz dokonać również na stronie Empik.com.
+          Z radością informuję, że mój eBook jest już dostępny na Empik oraz Gumroad – zapraszam do lektury!
         </p>
 
-        <div className="flex justify-center mt-[2vw]">
-          <a
-            href="https://twojastrona.pl/ebook"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-blue-600 text-white px-[4vw] py-[1.5vw] rounded-md md:text-[2vw] hover:bg-blue-700 transition"
-          >
-            Przejdź do strony zakupu
-          </a>
+        {/* Sekcja przycisków Empik + Gumroad */}
+        <div className="flex justify-between mt-[4vw] ">
+          {/* Empik */}
+          <div>
+            <a
+              href="https://www.empik.com/koktajle-bialkowo-kolagenowe-sadkowska-katarzyna,p1610220330,ebooki-i-mp3-p"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 text-white px-[4vw] py-[1.5vw] rounded-md md:text-[2vw] hover:bg-blue-700 transition"
+            >
+              Przejdź do strony Empik
+            </a>
+          </div>
+          {/* Gumroad */}
+          <div>
+            <a
+              href="https://glowsavor.gumroad.com/l/ylpry?_gl=1*1lip11v*_ga*MTYxMjU4MjM2Mi4xNzQ4MjM5Njg0*_ga_6LJN6D94N6*czE3NDgyMzk2ODMkbzEkZzEkdDE3NDgyNDE5OTAkajAkbDAkaDA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 text-white px-[4vw] py-[1.5vw] rounded-md md:text-[2vw] hover:bg-blue-700 transition"
+            >
+              Przejdź do strony Gumroad
+            </a>
+          </div>
+        </div>
+
+     {/* Sekcja próbki ebooka */}
+        <div className="mt-[4vw] md:text-[1.8vw] text-gray-800">
+          <p className="mb-[1vw]">
+            Jeśli nie jesteś pewny co do zakupu ebooka - kliknij w przycisk poniżej i pobierz próbkę, w której znajdziesz kilka informacji na temat kolagenu oraz jeden przepis na pyszny koktajl białkowo-kolagenowy :)
+          </p>
+          <div className="flex justify-center mt-[2vw]">
+            <a
+              href="/assets/Koktajle-białkowo-kolagenowe-sample.pdf"
+              download
+              className="bg-green-600 text-white px-[4vw] py-[1.5vw] rounded-md md:text-[2vw] hover:bg-green-700 transition"
+            >
+              Pobierz próbkę ebooka
+            </a>
+          </div>
         </div>
       </div>
     </section>
