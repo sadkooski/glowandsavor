@@ -100,9 +100,8 @@ const EbookPurchaseSection = () => {
         </p>
         <p className="mb-[1vw]">W razie pytań – napisz śmiało!</p>
         <p className="mb-[2vw]">
-          Z radością informuję, że mój eBook jest już dostępny na Empik oraz Gumroad – zapraszam do lektury!
-        </p>
-
+            Mój ebook jest też dostępny na platformie Empik oraz Gumroad. Zapraszam do lektury!
+            </p>
         {/* Sekcja przycisków Empik + Gumroad */}
         <div className="flex justify-between mt-[4vw] ">
           {/* Empik */}
