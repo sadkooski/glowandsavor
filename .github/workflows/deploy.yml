@@ -5,33 +5,36 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write    # <-- tu dajemy akcjom prawo do pushowania
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3        # warto zaktualizować do v3
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # Lub wersja, której używasz
+          node-version: '18'
 
       - name: Install dependencies (Frontend)
         working-directory: frontend
-        run: npm install
+        run: npm ci
 
       - name: Build project
         working-directory: frontend
         run: npm run build
 
       - name: Disable Jekyll
-        run: echo "" > .nojekyll
         working-directory: frontend/dist
+        run: echo "" > .nojekyll
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: frontend/dist
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}   # <-- używamy wbudowanego
